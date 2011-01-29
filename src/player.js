@@ -14,6 +14,8 @@ function addPlayer() {
     id: 'player_id',
     group: 'player',
     tileset: 'player_tiles',
+    x: 150,
+    y: 180,
 
     initialize: function() {
 

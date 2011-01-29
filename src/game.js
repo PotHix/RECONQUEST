@@ -32,7 +32,7 @@ function main(){
   };
 
   maingame.initializeGame = function() {
-    //addPlayer();
+    addPlayer();
     
     map = new Map;
     map.init();
