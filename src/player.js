@@ -1,8 +1,8 @@
 gbox.addTiles({
   id:      'player_tiles',
   image:   'player',
-  tileh:   16,
-  tilew:   16,
+  tileh:   64,
+  tilew:   64,
   tilerow: 1,
   gapx:    0,
   gapy:    0

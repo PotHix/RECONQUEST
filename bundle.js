@@ -7,7 +7,8 @@
     ["font","resources/font.png"],
     ["enemy01","resources/enemy01.png"],
     ["map_background", "resources/map_background.png"],
-    ["player","resources/titan-ice.png"]
+    ["player","resources/titan-ice.png"],
+    ["spell","resources/ice_spell.png"]
   ],
 
   // Tiles
