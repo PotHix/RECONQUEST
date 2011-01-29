@@ -6,7 +6,6 @@
     ["minion-ice","resources/minion-ice.png"],
     ["font","resources/font.png"],
     ["enemy01","resources/enemy01.png"],
-    ["player","resources/player_tile1.png"],
     ["map_background", "resources/map_background.png"]
   ],
 
