@@ -8,6 +8,7 @@ var Map = function()
  
             id: 'map_id',
             group: 'map',
+            image: 'map_background',
          
             initialize: function() {
               // ...
@@ -19,7 +20,8 @@ var Map = function()
          
             blit: function() {
                 gbox.blitFade(gbox.getBufferContext(),{});
-                gbox.blit(gbox.getBufferContext(), gbox.getImage('map_background'), {dx:0, dy:0});
+                
+                gbox.blitAll(gbox.getBufferContext(), gbox.getImage(this.image), {dx:0, dy:0});
             },
             
         });

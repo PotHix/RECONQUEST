@@ -18,7 +18,7 @@ var Enemy = function(){
 
       blit: function() {
 	// Clear the screen.
-	gbox.blitFade(gbox.getBufferContext(),{});
+	//gbox.blitFade(gbox.getBufferContext(),{});
 
 	gbox.blitTile(gbox.getBufferContext(), {
 	  tileset: this.tileset,

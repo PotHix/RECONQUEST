@@ -27,7 +27,6 @@ function addPlayer() {
     },
 
     blit: function() {
-      gbox.blitFade(gbox.getBufferContext(),{});
 
       gbox.blitTile(gbox.getBufferContext(), {
         tileset: this.tileset,
