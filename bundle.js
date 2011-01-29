@@ -5,7 +5,8 @@
     ["titan-ice","resources/titan-ice.png"],
     ["minion-ice","resources/minion-ice.png"],
     ["font","resources/font.png"],
-    ["enemy01","resources/enemy01.png"]
+    ["enemy01","resources/enemy01.png"],
+    ["player","resources/player_tile1.png"]
   ],
   addTiles:[
     {id:"enemy01", image:"enemy01", tileh:32, tilew:16, tilerow:1, gapx:0, gapy:0}

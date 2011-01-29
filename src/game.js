@@ -3,7 +3,7 @@
 // ---
 var maingame;
 function main(){
-  gbox.setGroups(['game']);
+  gbox.setGroups(['player','game']);
   maingame = gamecycle.createMaingame('game', 'game');
  
   maingame.gameTitleIntroAnimation=function(reset) {
@@ -30,6 +30,9 @@ function main(){
       toys.text.blink(this,"default-blinker",gbox.getBufferContext(),{font:"small",text:"PRESS Z TO START",valign:gbox.ALIGN_MIDDLE,halign:gbox.ALIGN_CENTER,dx:0,dy:Math.floor(gbox.getScreenH()/3),dw:gbox.getScreenW(),dh:Math.floor(gbox.getScreenH()/3)*2,blinkspeed:10});
       return gbox.keyIsHit("a");
       }
+  };
+  maingame.initializeGame = function() {
+    addPlayer();
   };
  
   gbox.go();
