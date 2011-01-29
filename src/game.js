@@ -37,5 +37,9 @@ function main(){
     e.init();
   };
 
+  // Removing title screens
+  maingame.gameMenu = function() { return true; };
+  maingame.gameIntroAnimation = function() { return true; };
+
   gbox.go();
 }
