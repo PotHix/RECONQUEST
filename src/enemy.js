@@ -5,6 +5,7 @@ var Enemy = function(){
       id: 'enemy-object',
       group: 'enemy',
       tileset: 'enemy-tile',
+      x:320,
 
       initialize: function() {
       	  toys.topview.initialize(this, {});
@@ -17,9 +18,6 @@ var Enemy = function(){
       },
 
       blit: function() {
-	// Clear the screen.
-	//gbox.blitFade(gbox.getBufferContext(),{});
-
 	gbox.blitTile(gbox.getBufferContext(), {
 	  tileset: this.tileset,
 	  tile:    this.frame,
