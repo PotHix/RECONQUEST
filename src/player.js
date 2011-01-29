@@ -10,28 +10,25 @@ gbox.addTiles({
 
 function addPlayer() {
   gbox.addObject({
- 
+
     id: 'player_id',
     group: 'player',
     tileset: 'player_tiles',
- 
+
     initialize: function() {
-     
-      toys.topview.initialize(this, {
-      });
+
+      toys.topview.initialize(this, {});
     },
- 
+
     first: function() {
       toys.topview.controlKeys(this, { left: 'left', right: 'right'});
-     
       toys.topview.handleAccellerations(this);
-     
       toys.topview.applyForces(this);
     },
- 
+
     blit: function() {
       gbox.blitFade(gbox.getBufferContext(),{});
-     
+
       gbox.blitTile(gbox.getBufferContext(), {
         tileset: this.tileset,
         tile:    this.frame,

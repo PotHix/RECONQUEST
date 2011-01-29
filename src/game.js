@@ -3,26 +3,25 @@
 // ---
 var maingame;
 function main(){
-  gbox.setGroups(['player','game']);
+  gbox.setGroups(['player','game','enemy']);
   maingame = gamecycle.createMaingame('game', 'game');
- 
+
   maingame.gameTitleIntroAnimation=function(reset) {
   if (reset) {
     toys.resetToy(this, 'rising');
   }
- 
+
   gbox.blitFade(gbox.getBufferContext(),{ alpha: 1 });
- 
-  toys.logos.linear(this, 'rising', {
-    image: 'logo',
-    sx:    gbox.getScreenW()/2-gbox.getImage('logo').width/2,
-    sy:    gbox.getScreenH(),
-    x:     gbox.getScreenW()/2-gbox.getImage('logo').width/2,
-    y:     20,
-    speed: 1
-  });
+    toys.logos.linear(this, 'rising', {
+      image: 'logo',
+      sx:    gbox.getScreenW()/2-gbox.getImage('logo').width/2,
+      sy:    gbox.getScreenH(),
+      x:     gbox.getScreenW()/2-gbox.getImage('logo').width/2,
+      y:     20,
+      speed: 1
+    });
   };
-  
+
   maingame.pressStartIntroAnimation=function(reset) {
     if (reset) {
       toys.resetToy(this,"default-blinker");
@@ -31,9 +30,12 @@ function main(){
       return gbox.keyIsHit("a");
       }
   };
+
   maingame.initializeGame = function() {
     addPlayer();
+    e = new Enemy;
+    e.init();
   };
- 
+
   gbox.go();
 }
