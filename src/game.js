@@ -3,5 +3,9 @@
 // ---
 
 function main(){
-}
+  var maingame;
+  gbox.setGroups(['game']);
+  maingame = gamecycle.createMaingame('game', 'game');
 
+  gbox.go();
+}
