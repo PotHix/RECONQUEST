@@ -24,8 +24,7 @@
   <body>
   </body>
   <script>
-    window.addEventListener('load', loadResources, false);
-    gbox.onLoad(loadResources(){
+    gbox.onLoad(function(){
       help.akihabaraInit({title:"Plæv Game",splash:{footnotes:["This is Plæv game for Global Game Jam 11"]}});
       gbox.addBundle({file:"bundle.js"}); // All I need to load
       gbox.loadAll(main);
