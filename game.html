@@ -2,6 +2,7 @@
 <!DOCTYPE HTML>
 <html>
   <head>
+	<!-- Akihabara Files -->
 	<script type="text/javascript" src="akihabara/gbox.js"></script>
 	<script type="text/javascript" src="akihabara/iphopad.js"></script>
 	<script type="text/javascript" src="akihabara/trigo.js"></script>
@@ -9,6 +10,13 @@
 	<script type="text/javascript" src="akihabara/help.js"></script>
 	<script type="text/javascript" src="akihabara/tool.js"></script>
 	<script type="text/javascript" src="akihabara/gamecycle.js"></script>
+
+	<!-- Game Files -->
+	<script type="text/javascript" src="src/game.js"></script>
+	<script type="text/javascript" src="src/map.js"></script>
+	<script type="text/javascript" src="src/player.js"></script>
+	<script type="text/javascript" src="src/enemy.js"></script>
+
 	<style>BODY { -webkit-user-select:none; margin:0px}</style>
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
   </head>
@@ -16,17 +24,11 @@
   <body>
   </body>
   <script>
-  // ---
-  // Copyright (c) 2011 PotHix, http://pothix.com/blog
-  // ---
-
-  function main(){
-  }
-
-  gbox.onLoad(function(){
-    help.akihabaraInit({title:"Plæv Game",splash:{footnotes:["This is Plæv game for Global Game Jam 11"]}});
-    gbox.addBundle({file:"bundle.js"}); // All I need to load
-    gbox.loadAll(main);
-  })
+    gbox.onLoad(function(){
+      help.akihabaraInit({title:"Plæv Game",splash:{footnotes:["This is Plæv game for Global Game Jam 11"]}});
+      gbox.addBundle({file:"bundle.js"}); // All I need to load
+      gbox.loadAll(main);
+    })
   </script>
 </html>
+
