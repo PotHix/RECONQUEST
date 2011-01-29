@@ -6,7 +6,8 @@
     ["minion-ice","resources/minion-ice.png"],
     ["font","resources/font.png"],
     ["enemy01","resources/enemy01.png"],
-    ["map_background", "resources/map_background.png"]
+    ["map_background", "resources/map_background.png"],
+    ["player","resources/titan-ice.png"]
   ],
 
   // Tiles
