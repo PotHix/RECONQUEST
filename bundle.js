@@ -11,7 +11,9 @@
     ["map_background", "resources/map_background.png"],
     ["player","resources/titan-ice.png"],
     ["spell1","resources/ice_spell.png"],
-    ["wall", "resources/wall.png"]
+    ["wall", "resources/wall.png"],
+    
+    ["enemy01-shadow", "resources/enemy01-shadow.png"]
   ],
 
   // Tiles
