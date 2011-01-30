@@ -13,7 +13,7 @@
 
   // Tiles
   addTiles:[
-    {id:"enemy-tiles", image:"enemy01", tilew:16, tileh:32, tilerow:3, gapx:0, gapy:0},
+    {id:"enemy-tiles", image:"enemy01", tilew:16, tileh:32, tilerow:6, gapx:0, gapy:0},
     {id:"spell-tile", image:"spell1", tilew:16, tileh:32, tilerow:1, gapx:0, gapy:0}
   ],
 
