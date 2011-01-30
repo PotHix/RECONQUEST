@@ -12,7 +12,8 @@
     ["player","resources/titan-ice.png"],
     ["spell1","resources/ice_spell.png"],
     ["titan-ice","resources/titan-ice.png"],
-    ["wall", "resources/wall.png"]
+    ["wall", "resources/wall.png"],
+    ["platform", "resources/platform.png"]
   ],
 
   // Tiles

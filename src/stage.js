@@ -28,6 +28,19 @@ var Stage = function()
 
                 this.health = new HealthBar;
                 this.health.init();
+                
+                
+                // Adding our platform (sure, it IS bad code. haven't you noticed yet?)
+                gbox.addObject({
+                    group: "platform",
+                    image: "platform",
+                    
+                    x: 38, y: 275,
+                    
+                    blit: function() {
+                        gbox.blitAll(gbox.getBufferContext(), gbox.getImage(this.image), {dx:this.x, dy:this.y});
+                    }
+                });
             },
 
             first: function() {

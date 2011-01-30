@@ -17,7 +17,7 @@ var Player = function(){
         movingright:{ speed:2, frames:[1,2,1,3] },
       },
 
-      x: 200, y: 270,
+      x: 200, y: 240,
       w: 64, h: 64,
 
       fireBullet:function(){
