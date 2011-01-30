@@ -8,25 +8,22 @@ var Enemy = function(){
       tileset: 'enemy-tiles',
       x:230,
       frames:{
-	  standup:    { speed:1, frames:[0] },
-	  standdown:  { speed:1, frames:[0] },
-	  standleft:  { speed:1, frames:[0] },
-	  standright: { speed:1, frames:[0] },
-	  movingup:   { speed:3, frames:[0] },
-	  movingdown: { speed:2, frames:[1,2] },
-	  movingleft: { speed:3, frames:[0] },
-	  movingright:{ speed:3, frames:[0] },
+	standup:    { speed:1, frames:[0] },
+	standdown:  { speed:1, frames:[0] },
+	standleft:  { speed:1, frames:[0] },
+	standright: { speed:1, frames:[0] },
+	movingup:   { speed:3, frames:[0] },
+	movingdown: { speed:2, frames:[1,2] },
+	movingleft: { speed:3, frames:[0] },
+	movingright:{ speed:3, frames:[0] },
       },
       counter:2,
 
       initialize: function() {
-      	  toys.topview.initialize(this, {
-	  });
-
+	toys.topview.initialize(this, {});
       },
 
       frame: 3,
-
       tile_in_map: 0,
       velocity: 1,
 
@@ -34,7 +31,7 @@ var Enemy = function(){
 	this.counter=(this.counter+1)%60; // We shouldn't do this =/
 
 	if (this.y < 200)
-    	this.y += this.velocity;
+	  this.y += this.velocity;
 
 	//toys.topview.controlKeys(this, { left: 'left', right: 'right', up: 'up', down: 'down' });
 	toys.topview.handleAccellerations(this);
