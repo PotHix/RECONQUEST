@@ -8,9 +8,10 @@ var Stage = function()
     {
         this.object = gbox.addObject({
             group: 'game',
-
             x: 0,  y: 0,
             w: 48, h: 48,
+            
+            energy_counter: 0,
 
             initialize: function() {
                 player = new Player;
@@ -21,11 +22,27 @@ var Stage = function()
 
                 this.enemyGenerator = new EnemyGenerator;
                 this.enemyGenerator.init();
+                
+                this.energy = new EnergyBar;
+                this.energy.init();
+
+                this.health = new HealthBar;
+                this.health.init();
             },
 
             first: function() {
                 var enemies = this.enemyGenerator.object.enemies;
-
+                
+                if (this.energy_counter++ > 200)
+                {
+                    if (maingame.hud.getValue("energy", "value") < 6)
+                    {
+                        maingame.hud.addValue("energy","value",1);
+                    }
+                    
+                    this.energy_counter = 0;
+                }
+                
                 for (var i = 0; i < enemies.length; i++)
                 {
                     var e = enemies[i];
