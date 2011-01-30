@@ -38,20 +38,11 @@ function main(){
     this.stage = new Stage;
     this.stage.init();
 
-    maingame.hud.setWidget("health",{
-      widget:    "symbols",
-      tiles:     [3,2,1,0],
-      minvalue:  0,
-      maxvalue:  20,
-      value:     12-(maingame.difficulty*4),
-      maxshown:  4,
-      tileset:   "hud-energy-fluid",
-      emptytile: 4,
-      dx:        40,
-      dy:        10,
-      gapx:      20,
-      gapy:      0
-    });
+    energy = new EnergyBar;
+    energy.init();
+
+    health = new HealthBar;
+    health.init();
   };
 
   // Removing title screens
@@ -59,6 +50,5 @@ function main(){
   maingame.gameIntroAnimation = function() { return true; };
 
   gbox.go();
-
 }
 
