@@ -49,8 +49,6 @@ var Enemy = function(){
 	    this.ypushing = 0;
 	  }
 
-
-	  //toys.topview.controlKeys(this, { left: 'left', right: 'right', up: 'up', down: 'down' });
 	  toys.topview.handleAccellerations(this);
 	  toys.topview.applyForces(this);
 	  toys.topview.setFrame(this);
@@ -76,18 +74,20 @@ var Enemy = function(){
 
       blit: function() {
           if (this.life > 0)
+	  {
               gbox.blitAll(gbox.getBufferContext(), gbox.getImage(this.shadow), {dx:this.x+1, dy:this.y+26});
 
-          gbox.blitTile(gbox.getBufferContext(), {
-              tileset: this.tileset,
-              tile:    this.frame,
-              dx:      this.x,
-              dy:      this.y,
-              fliph:   this.fliph,
-              flipv:   this.flipv,
-              camera:  this.camera,
-              alpha:   1.0
-         });
+	      gbox.blitTile(gbox.getBufferContext(), {
+		  tileset: this.tileset,
+		  tile:    this.frame,
+		  dx:      this.x,
+		  dy:      this.y,
+		  fliph:   this.fliph,
+		  flipv:   this.flipv,
+		  camera:  this.camera,
+		  alpha:   1.0
+	     });
+	  }
      }
     });
   }
