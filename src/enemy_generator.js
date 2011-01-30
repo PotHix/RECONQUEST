@@ -23,12 +23,10 @@ var EnemyGenerator = function()
                 {
                     var e = new Enemy;
                     e.init();
-                    e.object.x =  * i;
+                    e.object.x = 20 * i;
                     e.object.y = 10;
                     this.enemies[i] = e;
                 }
-                
-                alert("ok");
             },
          
             first: function() {
