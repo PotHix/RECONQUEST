@@ -3,7 +3,7 @@
 // ---
 var maingame;
 function main(){
-  gbox.setGroups(['map', 'player','playerbullets','game','enemy']);
+  gbox.setGroups(['map','player','playerbullets','game','enemy']);
   maingame = gamecycle.createMaingame('game', 'game');
 
   maingame.gameTitleIntroAnimation=function(reset) {
@@ -47,4 +47,5 @@ function main(){
   maingame.gameIntroAnimation = function() { return true; };
 
   gbox.go();
+
 }

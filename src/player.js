@@ -17,15 +17,23 @@ var Player = function(){
       weapon: 0,
 
       x: 200, y: 250,
+      
+      fireBullet:function(){
+        toys.shmup.fireBullet("playerbullets",null,{collidegroup:"enemy",from:this,upper:true,tileset:"spell-tile",spark:function(th){defaultSpark(th)},frames:{speed:1,frames:[0]},accx:0,accy:-8});
+        
+      },
 
       initialize: function() {
 	toys.topview.initialize(this, {});
       },
 
+
       first: function() {
 	toys.topview.controlKeys(this, { left: 'left', right: 'right'});
 	toys.topview.handleAccellerations(this);
 	toys.topview.applyForces(this);
+	if (gbox.keyIsHit("a"))
+	  this.fireBullet();
       },
 
       blit: function() {
