@@ -27,6 +27,7 @@ var EnemyGenerator = function()
                     e.object.tile_in_map = Math.floor(Math.random()*8);
 
                     e.object.velocity = Math.floor(Math.random()*10) / 10 + 0.2;
+                    e.object.frames.movingdown.speed = 3 - e.object.velocity;
 
                     e.object.x = e.object.tile_in_map * 48 + 54;
                     e.object.y = Math.floor(Math.random()*700) - 700;

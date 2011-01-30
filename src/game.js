@@ -21,7 +21,7 @@ function main(){
       sy:    gbox.getScreenH(),
       x:     gbox.getScreenW()/2-gbox.getImage('logo').width/2,
       y:     20,
-      speed: 1
+      speed: 2
     });
   };
 
