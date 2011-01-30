@@ -10,8 +10,8 @@
     ["map_background", "resources/map_background.png"],
     ["minion-ice","resources/minion-ice.png"],
     ["spell1","resources/ice_spell.png"],
-    ["titan-ice-upper","resources/titan-ice-upper.png"],
-    ["titan-ice-bottom","resources/titan-ice-bottom.png"],
+    ["titan-ice-upper","resources/titan-ice_upper.png"],
+    ["titan-ice-bottom","resources/titan-ice_bottom.png"],
     ["wall", "resources/wall.png"],
     ["platform", "resources/platform.png"]
   ],

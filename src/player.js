@@ -94,7 +94,7 @@ var Player = function(){
       group: 'player',
       tileset: 'player-bottom',
 
-      x: 200, y: 272,
+      x: 200, y: 240,
       w: 64, h: 64,
 
       initialize: function() {
