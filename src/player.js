@@ -16,7 +16,7 @@ var Player = function(){
       tileset: 'player_tiles',
       weapon: 0,
 
-      x: 200, y: 250,
+      x: 200, y: 270,
       
       fireBullet:function(){
         toys.shmup.fireBullet("playerbullets",null,{collidegroup:"enemy",from:this,upper:true,tileset:"spell-tile",spark:function(th){defaultSpark(th)},frames:{speed:1,frames:[0]},accx:0,accy:-8});
