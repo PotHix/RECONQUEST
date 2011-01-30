@@ -1,11 +1,16 @@
 var Player = function(){
 
   var upper = null;
+  var bottom = null;
 
   this.init = function(){
-    // Creating the upper part
+    this.create_bottom();
+    this.create_upper();
+  }
+
+  this.create_upper = function(){
     this.upper = gbox.addObject({
-      id: 'player_bottom',
+      id: 'player_upper',
       group: 'player',
       tileset: 'player-upper',
       weapon: 0,
@@ -87,10 +92,11 @@ var Player = function(){
 	});
       },
     });
+  }
 
-    // Now goes the bottom of the titan
+  this.create_bottom = function(){
     this.bottom = gbox.addObject({
-      id: 'player_upper',
+      id: 'player_bottom',
       group: 'player',
       tileset: 'player-bottom',
 
@@ -100,8 +106,6 @@ var Player = function(){
       initialize: function() {
 	toys.topview.initialize(this, {
 	    frames:{
-		    hit:      { speed:1, frames:[0] },
-		    still:      { speed:1, frames:[0] },
 		    standup:    { speed:1, frames:[0] },
 		    standdown:  { speed:1, frames:[0] },
 		    standleft:  { speed:1, frames:[0] },
@@ -109,12 +113,7 @@ var Player = function(){
 		    movingup: { speed:1, frames:[1,2,1,3] },
 		    movingdown:{ speed:1, frames:[1,2,1,3] },
 		    movingleft: { speed:1, frames:[1,2,1,3] },
-		    movingright:{ speed:1, frames:[1,2,1,3] },
-		    pushingup:  {speed:1,frames:[0] },
-		    pushingdown:{speed:1,frames:[0] },
-		    pushingleft:{speed:1,frames:[0] },
-		    pushingright:{speed:6,frames:[0] }
-
+		    movingright:{ speed:1, frames:[1,2,1,3] }
 	    }
 	});
       },
@@ -150,4 +149,5 @@ var Player = function(){
     });
   }
 }
+
 
