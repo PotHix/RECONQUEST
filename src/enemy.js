@@ -12,15 +12,15 @@ var Enemy = function(){
         movingdown: { speed:2,  frames:[0,1,0,2] },
         firing:     { speed:3,  frames:[3,4,3,5] }
       },
-      
+
       shadow: "enemy01-shadow",
-      
+
       counter:2,
       life: 100,
-      
+
       wall: true,
       force: 0.2,
-      
+
       point_to_shoot: 200,
 
       initialize: function() {
@@ -33,49 +33,52 @@ var Enemy = function(){
       velocity: 1,
 
       first: function() {
-	    this.counter=(this.counter+1)%60; // We shouldn't do this =/
-	    
+	  this.counter=(this.counter+1)%60; // We shouldn't do this =/
 
-        if (this.y < this.point_to_shoot || !this.wall)
-        {
-          this.y += this.velocity;
-        }
-        else
-        {
-          this.ypushing = 0;
-        }
-          
+	  if(this.y > gbox.getScreenH())
+	  {
+	    this.life = 0;
+	  }
 
-        //toys.topview.controlKeys(this, { left: 'left', right: 'right', up: 'up', down: 'down' });
-        toys.topview.handleAccellerations(this);
-        toys.topview.applyForces(this);
-        toys.topview.setFrame(this);
+	  if (this.y < this.point_to_shoot || !this.wall)
+	  {
+	    this.y += this.velocity;
+	  }
+	  else
+	  {
+	    this.ypushing = 0;
+	  }
+
+
+	  //toys.topview.controlKeys(this, { left: 'left', right: 'right', up: 'up', down: 'down' });
+	  toys.topview.handleAccellerations(this);
+	  toys.topview.applyForces(this);
+	  toys.topview.setFrame(this);
       },
-      
+
       isShooting: function() {
-        return this.y >= this.point_to_shoot;
+	  return this.y >= this.point_to_shoot;
       },
-      
+
       hitByBullet: function(by) {
-        this.life -= 50;
-        
-        if (this.life <= 0) 
-        {
-            gbox.trashObject(this);
-        }
+	  this.life -= 50;
+
+	  if (this.life <= 0)
+	  {
+	      gbox.trashObject(this);
+	  }
       },
-      
+
       walkAgain: function() {
-        this.wall = false;
-        this.ypushing = 1;
+	  this.wall = false;
+	  this.ypushing = 1;
       },
 
       blit: function() {
-      
-        if (this.life > 0)
-            gbox.blitAll(gbox.getBufferContext(), gbox.getImage(this.shadow), {dx:this.x+1, dy:this.y+26});
-        
-            gbox.blitTile(gbox.getBufferContext(), {
+          if (this.life > 0)
+              gbox.blitAll(gbox.getBufferContext(), gbox.getImage(this.shadow), {dx:this.x+1, dy:this.y+26});
+
+          gbox.blitTile(gbox.getBufferContext(), {
               tileset: this.tileset,
               tile:    this.frame,
               dx:      this.x,
@@ -84,8 +87,8 @@ var Enemy = function(){
               flipv:   this.flipv,
               camera:  this.camera,
               alpha:   1.0
-            });
-      }
+         });
+     }
     });
   }
 }
