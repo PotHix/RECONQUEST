@@ -59,7 +59,9 @@ var Enemy = function(){
       },
 
       hitByBullet: function(by) {
-	  this.life -= 50;
+	    this.life -= 50;
+	    
+	    toys.generate.sparks.simple(this,"sparks",null,{alpha:0.7,gapy:10,frames:{speed:3,frames:[3,2,1,2,3]},tileset:"hit-sparks-tiles"});
       },
 
       walkAgain: function() {
