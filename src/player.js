@@ -42,4 +42,5 @@ var Player = function(){
       },
     });
   }
+}
 
