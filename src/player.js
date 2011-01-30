@@ -36,11 +36,11 @@ var Player = function(){
       initialize: function() {
 	toys.topview.initialize(this, {
 	    frames:{
-	      standdown:  { speed:1, frames:[0]       },
-	      standleft:  { speed:1, frames:[0]       },
-	      standright: { speed:1, frames:[0]       },
-	      movingleft: { speed:1, frames:[1,2,1,3] },
-	      movingright:{ speed:1, frames:[1,2,1,3] }
+	      standdown:  { speed:1, frames:[0]   },
+	      standleft:  { speed:1, frames:[0]   },
+	      standright: { speed:1, frames:[0]   },
+	      movingleft: { speed:5, frames:[1,2] },
+	      movingright:{ speed:5, frames:[1,2] }
 	    }
 	});
       },
@@ -93,6 +93,8 @@ var Player = function(){
       x: 200, y: 240,
       w: 64, h: 64,
 
+      shadow: "titan-ice-shadow",
+
       initialize: function() {
 	toys.topview.initialize(this, {
 	    frames:{
@@ -122,6 +124,8 @@ var Player = function(){
       },
 
       blit: function() {
+	gbox.blitAll(gbox.getBufferContext(), gbox.getImage(this.shadow), {dx:this.x+11, dy:this.y+55});
+
 	gbox.blitTile(gbox.getBufferContext(), {
 	  tileset: this.tileset,
 	  tile:    this.frame,

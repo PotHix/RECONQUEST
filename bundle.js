@@ -12,6 +12,7 @@
     ["spell1","resources/ice_spell.png"],
     ["titan-ice-upper","resources/titan-ice_upper.png"],
     ["titan-ice-bottom","resources/titan-ice_bottom.png"],
+    ["titan-ice-shadow","resources/titan-ice_shadow.png"],
     ["wall", "resources/wall.png"],
     ["platform", "resources/platform.png"]
   ],
