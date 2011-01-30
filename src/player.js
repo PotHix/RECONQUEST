@@ -21,6 +21,9 @@ var Player = function(){
       w: 64, h: 64,
 
       fireBullet:function(){
+      	this.frame = 4; //Attacking frame
+      	this.stilltimer = 5; //Holding attack position for a while
+
         toys.shmup.fireBullet("playerbullets",null,{
           collidegroup:"enemy",
           from:this,
@@ -47,6 +50,7 @@ var Player = function(){
       },
 
       first: function() {
+      	if (this.stilltimer) this.stilltimer--; //The engine should decrease stilltimer for us
 	this.counter=(this.counter+1)%60; // We shouldn't do this =/
 
 	var space = 10;
@@ -59,7 +63,7 @@ var Player = function(){
 	toys.topview.controlKeys(this, { left: 'left', right: 'right'});
 	toys.topview.handleAccellerations(this);
 	toys.topview.applyForces(this);
-	toys.topview.setFrame(this);
+	if (!this.stilltimer) toys.topview.setFrame(this);
 
 	this.time -= 1;
 	if (gbox.keyIsHit("a")){

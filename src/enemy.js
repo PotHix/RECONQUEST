@@ -60,11 +60,6 @@ var Enemy = function(){
 
       hitByBullet: function(by) {
 	  this.life -= 50;
-
-	  if (this.life <= 0)
-	  {
-	      gbox.trashObject(this);
-	  }
       },
 
       walkAgain: function() {

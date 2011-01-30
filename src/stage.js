@@ -63,8 +63,12 @@ var Stage = function()
                 for (var i = 0; i < enemies.length; i++)
                 {
                     var e = enemies[i];
-
-                    if (e.object && e.object.life > 0)
+                    
+                    if (e.object.life <= 0)
+                    {
+                        this.enemyGenerator.object.spawn(e);
+                    }
+                    else if (e.object && e.object.life > 0)
 		    {
 
 			if(e.object.y > gbox.getScreenH())
