@@ -1,42 +1,52 @@
-
 <!DOCTYPE HTML>
 <html>
   <head>
-	<!-- Akihabara Files -->
-	<script type="text/javascript" src="akihabara/gbox.js"></script>
-	<script type="text/javascript" src="akihabara/iphopad.js"></script>
-	<script type="text/javascript" src="akihabara/trigo.js"></script>
-	<script type="text/javascript" src="akihabara/toys.js"></script>
-	<script type="text/javascript" src="akihabara/help.js"></script>
-	<script type="text/javascript" src="akihabara/tool.js"></script>
-	<script type="text/javascript" src="akihabara/gamecycle.js"></script>
+  <!-- Akihabara Files -->
+  <script type="text/javascript" src="akihabara/gbox.js"></script>
+  <script type="text/javascript" src="akihabara/iphopad.js"></script>
+  <script type="text/javascript" src="akihabara/trigo.js"></script>
+  <script type="text/javascript" src="akihabara/toys.js"></script>
+  <script type="text/javascript" src="akihabara/help.js"></script>
+  <script type="text/javascript" src="akihabara/tool.js"></script>
+  <script type="text/javascript" src="akihabara/gamecycle.js"></script>
 
-	<!-- Game Files -->
-	<script type="text/javascript" src="src/game.js"></script>
-	<script type="text/javascript" src="src/map.js"></script>
-	<script type="text/javascript" src="src/player.js"></script>
-	<script type="text/javascript" src="src/enemy.js"></script>
-	<script type="text/javascript" src="src/spell.js"></script>
-	<script type="text/javascript" src="src/enemy_generator.js"></script>
-	<script type="text/javascript" src="src/wall.js"></script>
-	<script type="text/javascript" src="src/stage.js"></script>
-	<script type="text/javascript" src="src/health_bar.js"></script>
-	<script type="text/javascript" src="src/energy_bar.js"></script>
+  <!-- Game Files -->
+  <script type="text/javascript" src="src/game.js"></script>
+  <script type="text/javascript" src="src/map.js"></script>
+  <script type="text/javascript" src="src/player.js"></script>
+  <script type="text/javascript" src="src/enemy.js"></script>
+  <script type="text/javascript" src="src/spell.js"></script>
+  <script type="text/javascript" src="src/enemy_generator.js"></script>
+  <script type="text/javascript" src="src/wall.js"></script>
+  <script type="text/javascript" src="src/stage.js"></script>
+  <script type="text/javascript" src="src/health_bar.js"></script>
+  <script type="text/javascript" src="src/energy_bar.js"></script>
 
-	<style>BODY { -webkit-user-select:none; margin:0px}</style>
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+  <style>body { -webkit-user-select:none; margin:0}</style>
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <!-- Site Info -->
+  <meta name="author" content="Plæv" />
+  <meta name="description" content="Entry for Global Game Jam '11 - São Caetano do Sul, SP - Brazil" />
+  <meta name="generator" content="VIm" />
+  <meta name="keywords" content="Akihabara, Global Game Jam, shoot 'em up" />
+
+  <title>Rise of the Titans - Plæv Team (GGJ'11)</title>
   </head>
 
   <body>
   </body>
+
   <script>
     function defaultSpark() { return; }
-  
+
     gbox.onLoad(function(){
-      help.akihabaraInit({title:"Plæv Game",splash:{footnotes:["This is Plæv game for Global Game Jam 11"]}, width: 460, height: 340, zoom: 1});
+      help.akihabaraInit({title:"Rise of the Titans",splash:{footnotes:["Plaev Team entry for Global Game Jam '11 at Sao Caetano do Sul, SP - Brazil"]}, width: 460, height: 340, zoom: 1.5});
       gbox.addBundle({file:"bundle.js"}); // All I need to load
       gbox.loadAll(main);
     })
   </script>
-</html>
 
+</html>
