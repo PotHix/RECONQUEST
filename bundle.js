@@ -22,13 +22,13 @@
     {id:"enemy-tiles",  image:"enemy01",          tilew:16,  tileh:32, tilerow:6, gapx:0, gapy:0},
     {id:"hud-energy",   image:"energy",           tilew:222, tileh:23, tilerow:6, gapx:0, gapy:0},
     {id:"hud-health",   image:"health",           tilew:222, tileh:23, tilerow:6, gapx:0, gapy:0},
-    {id:"player-upper", image:"titan-ice-upper",  tilew:64,  tileh:64, tilerow:5, gapx:0, gapy:0},
+    {id:"player-upper", image:"titan-ice-upper",  tilew:64,  tileh:80, tilerow:5, gapx:0, gapy:0},
     {id:"player-bottom",image:"titan-ice-bottom", tilew:64,  tileh:64, tilerow:5, gapx:0, gapy:0},
-    {id:"spell-tile",   image:"spell1",           tilew:16,  tileh:32, tilerow:1, gapx:0, gapy:0}
+    {id:"spell-tile",   image:"spell1",           tilew:16,  tileh:32, tilerow:2, gapx:0, gapy:0}
   ],
 
   // Fonts
   addFont:[
-    {id:"small",image:"font",firstletter:" ",tileh:8,tilew:8,tilerow:255,gapx:0,gapy:8}
+    {id:"small", image:"font", firstletter:" ", tileh:8, tilew:8, tilerow:255, gapx:0, gapy:8}
   ]
 }

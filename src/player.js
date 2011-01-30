@@ -17,7 +17,7 @@ var Player = function(){
       time: 2,
       counter: 2,
 
-      x: 200, y: 240,
+      x: 200, y: 224,
       w: 64, h: 64,
 
       fireBullet:function(){
@@ -32,7 +32,7 @@ var Player = function(){
           spark:function(th){
             defaultSpark(th)
           },
-          frames: { speed: 1, frames: [0] },
+          frames: { speed: 3, frames: [0,1] },
           accx:0, accy:-8
         });
       },
