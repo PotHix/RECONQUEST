@@ -29,6 +29,7 @@ var Player = function(){
           spark:function(th){
             defaultSpark(th)
           },
+          frames: { speed: 1, frames: [0] },
           accx:0, accy:-8
         });
       },
