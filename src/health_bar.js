@@ -6,9 +6,7 @@ var HealthBar = function(){
     maingame.hud.setWidget("health",{
       widget:    "symbols",
       tiles:     [0,1,2,3,4,5],
-      minvalue:  0,
-      maxvalue:  20,
-      value:     12-(maingame.difficulty*4),
+      value:     6,
       maxshown:  1,
       tileset:   "hud-health",
       emptytile: 0,
