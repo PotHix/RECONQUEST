@@ -14,6 +14,7 @@ function addPlayer() {
     id: 'player_id',
     group: 'player',
     tileset: 'player_tiles',
+    weapon: 0,
     x: 200,
     y: 250,
 

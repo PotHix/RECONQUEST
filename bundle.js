@@ -9,13 +9,14 @@
     ["enemy01-tiles","resources/enemy01-tiles.png"],
     ["map_background", "resources/map_background.png"],
     ["player","resources/titan-ice.png"],
-    ["spell","resources/ice_spell.png"]
+    ["spell1","resources/ice_spell.png"]
   ],
 
   // Tiles
   addTiles:[
     {id:"enemy-tile", image:"enemy01", tilew:16, tileh:32, tilerow:1, gapx:0, gapy:0},
-    {id:"enemy-tiles", image:"enemy01-tiles", tilew:16, tileh:32, tilerow:10, gapx:0, gapy:0}
+    {id:"enemy-tiles", image:"enemy01-tiles", tilew:16, tileh:32, tilerow:10, gapx:0, gapy:0},
+    {id:"spell-tile", image:"spell1", tilew:16, tileh:32, tilerow:1, gapx:0, gapy:0}
   ],
 
   // Fonts

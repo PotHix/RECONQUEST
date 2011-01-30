@@ -3,7 +3,7 @@
 // ---
 var maingame;
 function main(){
-  gbox.setGroups(['map', 'player','game','enemy', 'spell']);
+  gbox.setGroups(['map', 'player','playerbullets','game','enemy']);
   maingame = gamecycle.createMaingame('game', 'game');
 
   maingame.gameTitleIntroAnimation=function(reset) {
@@ -33,13 +33,10 @@ function main(){
 
   maingame.initializeGame = function() {
     addPlayer();
-    iceSpell();
     
     map = new Map;
     map.init();
     
-    /*e = new Enemy;
-    e.init();*/
     
     enemyGenerator = new EnemyGenerator;
     enemyGenerator.init();
