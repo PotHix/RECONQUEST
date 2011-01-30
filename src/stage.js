@@ -46,6 +46,8 @@ var Stage = function()
             },
 
             first: function() {
+		gbox.stopAudio("title_screen");
+		gbox.playAudio("bgm");
                 var enemies = this.enemyGenerator.object.enemies;
                 
                 if (this.energy_counter++ > 200)
@@ -78,6 +80,7 @@ var Stage = function()
 			    
 			    if (maingame.hud.getValue("health", "value") < 2 && !this.game_over)
 			    {
+		                gbox.stopAudio("bgm");
 			        maingame.playerDied({wait:15});
 			        this.game_over = true;
 			    }

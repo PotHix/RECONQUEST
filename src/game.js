@@ -10,8 +10,9 @@ function main(){
   var stage;
 
   maingame.gameTitleIntroAnimation=function(reset) {
+  gbox.stopAudio("bgm");
+  gbox.playAudio("title_screen");
   if (reset) {
-    gbox.playAudio("title_screen");
     toys.resetToy(this, 'rising');
   }
 
