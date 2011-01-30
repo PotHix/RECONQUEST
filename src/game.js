@@ -32,12 +32,12 @@ function main(){
   };
 
   maingame.initializeGame = function() {
-    addPlayer();
-    
+    player = new Player;
+    player.init();
+
     map = new Map;
     map.init();
-    
-    
+
     enemyGenerator = new EnemyGenerator;
     enemyGenerator.init();
   };

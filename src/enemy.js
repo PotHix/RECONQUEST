@@ -1,6 +1,6 @@
 // Class to take care of enemies
 var Enemy = function(){
-    var object = null;
+  var object = null;
 
   this.init = function(){
     this.object = gbox.addObject({
