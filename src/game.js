@@ -37,12 +37,6 @@ function main(){
   maingame.initializeGame = function() {
     this.stage = new Stage;
     this.stage.init();
-
-    energy = new EnergyBar;
-    energy.init();
-
-    health = new HealthBar;
-    health.init();
   };
 
   // Should not show game menu for now
