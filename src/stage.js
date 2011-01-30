@@ -12,6 +12,8 @@ var Stage = function()
             w: 48, h: 48,
             
             energy_counter: 0,
+            
+            game_over: false,
 
             initialize: function() {
                 player = new Player;
@@ -66,6 +68,12 @@ var Stage = function()
 			if(e.object.y > gbox.getScreenH())
 			{
 			    maingame.hud.addValue("health","value",-1);
+			    
+			    if (maingame.hud.getValue("health", "value") < 2 && !this.game_over)
+			    {
+			        maingame.playerDied({wait:15});
+			        this.game_over = true;
+			    }
 			}
 
 			if (e.object.isShooting())
