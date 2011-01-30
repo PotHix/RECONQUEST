@@ -12,7 +12,9 @@ var Enemy = function(){
         movingdown: { speed:2,  frames:[0,1,0,2] },
         firing:     { speed:3,  frames:[3,4,3,5] }
       },
+      
       counter:2,
+      life: 100,
       
       wall: true,
       force: 0.2,
@@ -52,22 +54,33 @@ var Enemy = function(){
         return this.y >= this.point_to_shoot;
       },
       
+      hitByBullet: function(by) {
+        this.life -= 50;
+        
+        if (this.life <= 0) 
+        {
+            gbox.trashObject(this);
+        }
+      },
+      
       walkAgain: function() {
         this.wall = false;
         this.ypushing = 1;
       },
 
       blit: function() {
-        gbox.blitTile(gbox.getBufferContext(), {
-          tileset: this.tileset,
-          tile:    this.frame,
-          dx:      this.x,
-          dy:      this.y,
-          fliph:   this.fliph,
-          flipv:   this.flipv,
-          camera:  this.camera,
-          alpha:   1.0
-        });
+      
+        if (this.life > 0)
+            gbox.blitTile(gbox.getBufferContext(), {
+              tileset: this.tileset,
+              tile:    this.frame,
+              dx:      this.x,
+              dy:      this.y,
+              fliph:   this.fliph,
+              flipv:   this.flipv,
+              camera:  this.camera,
+              alpha:   1.0
+            });
       }
     });
   }

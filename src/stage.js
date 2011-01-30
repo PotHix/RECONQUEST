@@ -35,14 +35,17 @@ var Stage = function()
                 {
                     var e = enemies[i];
                     
-                    if (e.object.isShooting())
+                    if (e.object) 
                     {
-                        var w = this.map.object.wall_list[e.object.tile_in_map];
-                        w.object.life -= e.object.force;
-                        
-                        if (w.object.life <= 0)
+                        if (e.object.isShooting() && e.object.life > 0)
                         {
-                            e.object.walkAgain();
+                            var w = this.map.object.wall_list[e.object.tile_in_map];
+                            w.object.life -= e.object.force;
+                            
+                            if (w.object.life <= 0)
+                            {
+                                e.object.walkAgain();
+                            }
                         }
                     }
                 }
