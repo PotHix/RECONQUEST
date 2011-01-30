@@ -55,6 +55,8 @@ var Stage = function()
                         maingame.hud.addValue("energy","value",1);
                     }
                     
+                    this.enemyGenerator.object.addEnemy();
+                    
                     this.energy_counter = 0;
                 }
                 
@@ -68,6 +70,7 @@ var Stage = function()
 			if(e.object.y > gbox.getScreenH())
 			{
 			    maingame.hud.addValue("health","value",-1);
+			    this.enemyGenerator.object.spawn(e);
 			    
 			    if (maingame.hud.getValue("health", "value") < 2 && !this.game_over)
 			    {
