@@ -24,11 +24,15 @@ var Enemy = function(){
 	  });
 
       },
+      
+      tile_in_map: 0,
+      velocity: 1,
 
       first: function() {
 	this.counter=(this.counter+1)%60; // We shouldn't do this =/
+	this.y += this.velocity;
 
-	toys.topview.controlKeys(this, { left: 'left', right: 'right', up: 'up', down: 'down' });
+	//toys.topview.controlKeys(this, { left: 'left', right: 'right', up: 'up', down: 'down' });
 	toys.topview.handleAccellerations(this);
 	toys.topview.applyForces(this);
 	toys.topview.setFrame(this);

@@ -16,7 +16,7 @@ var Player = function(){
       tileset: 'player_tiles',
       weapon: 0,
 
-      x: 200, y: 250,
+      x: 200, y: 270,
 
       initialize: function() {
 	toys.topview.initialize(this, {});
@@ -42,5 +42,4 @@ var Player = function(){
       },
     });
   }
-}
 
