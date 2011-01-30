@@ -13,6 +13,8 @@ var Enemy = function(){
         firing:     { speed:3,  frames:[3,4,3,5] }
       },
       
+      shadow: "enemy01-shadow",
+      
       counter:2,
       life: 100,
       
@@ -71,6 +73,8 @@ var Enemy = function(){
       blit: function() {
       
         if (this.life > 0)
+            gbox.blitAll(gbox.getBufferContext(), gbox.getImage(this.shadow), {dx:this.x+1, dy:this.y+26});
+        
             gbox.blitTile(gbox.getBufferContext(), {
               tileset: this.tileset,
               tile:    this.frame,

@@ -45,8 +45,10 @@ function main(){
     health.init();
   };
 
-  // Removing title screens
+  // Should not show game menu for now
   maingame.gameMenu = function() { return true; };
+
+  // Just thinking if we want "Let's Begin" on intro game animation
   maingame.gameIntroAnimation = function() { return true; };
 
   gbox.go();
