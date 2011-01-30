@@ -25,8 +25,8 @@ var Stage = function()
                 this.enemyGenerator = new EnemyGenerator;
                 this.enemyGenerator.init();
                 
-                this.energy = new EnergyBar;
-                this.energy.init();
+                /*this.energy = new EnergyBar;
+                this.energy.init();*/
 
                 this.health = new HealthBar;
                 this.health.init();
