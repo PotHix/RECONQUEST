@@ -38,8 +38,11 @@ function main(){
     map = new Map;
     map.init();
     
-    e = new Enemy;
-    e.init();
+    /*e = new Enemy;
+    e.init();*/
+    
+    enemyGenerator = new EnemyGenerator;
+    enemyGenerator.init();
   };
 
   // Removing title screens
