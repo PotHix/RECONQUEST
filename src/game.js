@@ -4,7 +4,7 @@
 
 var maingame;
 function main(){
-  gbox.setGroups(['map','enemy','wall','playerbullets','player','game']);
+  gbox.setGroups(['map','enemy','wall','platform','playerbullets','player','game']);
   maingame = gamecycle.createMaingame('game', 'game');
 
   var stage;
