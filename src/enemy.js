@@ -14,6 +14,9 @@ var Enemy = function(){
       },
       counter:2,
       
+      wall: true,
+      force: 0.2,
+      
       point_to_shoot: 200,
 
       initialize: function() {
@@ -29,7 +32,7 @@ var Enemy = function(){
 	    this.counter=(this.counter+1)%60; // We shouldn't do this =/
 	    
 
-        if (this.y < this.point_to_shoot)
+        if (this.y < this.point_to_shoot || !this.wall)
         {
           this.y += this.velocity;
         }
@@ -47,6 +50,11 @@ var Enemy = function(){
       
       isShooting: function() {
         return this.y >= this.point_to_shoot;
+      },
+      
+      walkAgain: function() {
+        this.wall = false;
+        this.ypushing = 1;
       },
 
       blit: function() {

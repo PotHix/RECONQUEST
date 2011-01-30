@@ -38,7 +38,12 @@ var Stage = function()
                     if (e.object.isShooting())
                     {
                         var w = this.map.object.wall_list[e.object.tile_in_map];
-                        w.object.life = 0;
+                        w.object.life -= e.object.force;
+                        
+                        if (w.object.life <= 0)
+                        {
+                            e.object.walkAgain();
+                        }
                     }
                 }
             },
