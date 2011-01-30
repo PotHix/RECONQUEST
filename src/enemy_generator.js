@@ -28,6 +28,7 @@ var EnemyGenerator = function()
             spawn: function(e) {
                 e.object.life = 100;
                 e.object.wall = true;
+                e.object.ypushing = 1;
             
                 e.object.tile_in_map = Math.floor(Math.random()*8);
             
@@ -35,7 +36,7 @@ var EnemyGenerator = function()
                 e.object.frames.movingdown.speed = 3 - e.object.velocity;
                 
                 e.object.x = e.object.tile_in_map * 48 + 54;
-                e.object.y = Math.floor(Math.random()*35)*20 - 640;
+                e.object.y = Math.floor(Math.random()*30)*20 - 700;
             },
             
             addEnemy: function() {
