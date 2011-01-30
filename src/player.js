@@ -36,21 +36,11 @@ var Player = function(){
       initialize: function() {
 	toys.topview.initialize(this, {
 	    frames:{
-		    hit:      { speed:1, frames:[0] },
-		    still:      { speed:1, frames:[0] },
-		    standup:    { speed:1, frames:[0] },
-		    standdown:  { speed:1, frames:[0] },
-		    standleft:  { speed:1, frames:[0] },
-		    standright: { speed:1, frames:[0] },
-		    movingup: { speed:1, frames:[1,2,1,3] },
-		    movingdown:{ speed:1, frames:[1,2,1,3] },
-		    movingleft: { speed:1, frames:[1,2,1,3] },
-		    movingright:{ speed:1, frames:[1,2,1,3] },
-		    pushingup:  {speed:1,frames:[0] },
-		    pushingdown:{speed:1,frames:[0] },
-		    pushingleft:{speed:1,frames:[0] },
-		    pushingright:{speed:6,frames:[0] }
-
+	      standdown:  { speed:1, frames:[0]       },
+	      standleft:  { speed:1, frames:[0]       },
+	      standright: { speed:1, frames:[0]       },
+	      movingleft: { speed:1, frames:[1,2,1,3] },
+	      movingright:{ speed:1, frames:[1,2,1,3] }
 	    }
 	});
       },
