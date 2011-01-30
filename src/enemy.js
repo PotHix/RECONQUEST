@@ -1,8 +1,9 @@
 // Class to take care of enemies
 var Enemy = function(){
+    var object = null;
+
   this.init = function(){
-    gbox.addObject({
-      id: 'enemy-object',
+    this.object = gbox.addObject({
       group: 'enemy',
       tileset: 'enemy-tiles',
       x:230,
