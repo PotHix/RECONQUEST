@@ -3,8 +3,10 @@
 // ---
 var maingame;
 function main(){
-  gbox.setGroups(['map','player','playerbullets','game','enemy']);
+  gbox.setGroups(['map','player','enemy','wall','playerbullets','game']);
   maingame = gamecycle.createMaingame('game', 'game');
+  
+  var stage;
 
   maingame.gameTitleIntroAnimation=function(reset) {
   if (reset) {
@@ -32,14 +34,9 @@ function main(){
   };
 
   maingame.initializeGame = function() {
-    player = new Player;
-    player.init();
-
-    map = new Map;
-    map.init();
-
-    enemyGenerator = new EnemyGenerator;
-    enemyGenerator.init();
+    this.stage = new Stage;
+    this.stage.init();
+    
   };
 
   // Removing title screens

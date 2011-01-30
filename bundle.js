@@ -8,7 +8,8 @@
     ["enemy01","resources/enemy01.png"],
     ["map_background", "resources/map_background.png"],
     ["player","resources/titan-ice.png"],
-    ["spell1","resources/ice_spell.png"]
+    ["spell1","resources/ice_spell.png"],
+    ["wall", "resources/wall.png"]
   ],
 
   // Tiles

@@ -5,7 +5,7 @@ var EnemyGenerator = function()
     var object = null;
 
     this.init = function() 
-    {
+    { 
         this.object = gbox.addObject({
  
             id: 'enemy_generator_id',
@@ -17,6 +17,7 @@ var EnemyGenerator = function()
             max_enemies: 40,
             
             enemies: [],
+
          
             initialize: function() {
                 for (var i = 0; i < this.max_enemies; i++)
@@ -30,6 +31,7 @@ var EnemyGenerator = function()
                     
                     e.object.x = e.object.tile_in_map * 48 + 54;
                     e.object.y = Math.floor(Math.random()*700) - 700;
+                    
                     this.enemies[i] = e;
                 }
             },
@@ -41,13 +43,6 @@ var EnemyGenerator = function()
             blit: function() {
                 
                 //gbox.blitAll(gbox.getBufferContext(), gbox.getImage(this.image), {dx:this.x, dy:this.y});
-            },
-            
-            startEnemies: function() {
-                for (var i = 0; i < this.max_enemies; i++)
-                {
-                    //enemies[i].init();
-                }
             },
             
         });

@@ -13,6 +13,8 @@ var Enemy = function(){
         firing:     { speed:3,  frames:[3,4,3,5] }
       },
       counter:2,
+      
+      point_to_shoot: 200,
 
       initialize: function() {
         toys.topview.initialize(this, {});
@@ -27,18 +29,24 @@ var Enemy = function(){
 	    this.counter=(this.counter+1)%60; // We shouldn't do this =/
 	    
 
-        if (this.y < 200)
+        if (this.y < this.point_to_shoot)
         {
           this.y += this.velocity;
         }
         else
+        {
           this.ypushing = 0;
+        }
           
 
         //toys.topview.controlKeys(this, { left: 'left', right: 'right', up: 'up', down: 'down' });
         toys.topview.handleAccellerations(this);
         toys.topview.applyForces(this);
         toys.topview.setFrame(this);
+      },
+      
+      isShooting: function() {
+        return this.y >= this.point_to_shoot;
       },
 
       blit: function() {
