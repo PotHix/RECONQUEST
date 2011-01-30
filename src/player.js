@@ -19,6 +19,7 @@ var Player = function(){
       group: 'player',
       tileset: 'player_tiles',
       weapon: 0,
+      time: 2,
 
       x: 200, y: 270,
       w: 64, h: 64,
@@ -44,8 +45,13 @@ var Player = function(){
 	toys.topview.controlKeys(this, { left: 'left', right: 'right'});
 	toys.topview.handleAccellerations(this);
 	toys.topview.applyForces(this);
-	if (gbox.keyIsHit("a"))
-	  this.fireBullet();
+	this.time -= 1;
+	if (gbox.keyIsHit("a")){
+	  if (!(1 < this.time) ){
+	    this.fireBullet();
+	    this.time = 10;
+	  }
+	}
       },
 
       blit: function() {
