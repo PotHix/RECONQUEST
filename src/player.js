@@ -4,8 +4,8 @@ var Player = function(){
   var bottom = null;
 
   this.init = function(){
-    this.create_bottom();
     this.create_upper();
+    this.create_bottom();
   }
 
   this.create_upper = function(){
