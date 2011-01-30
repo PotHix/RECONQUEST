@@ -21,15 +21,26 @@ var Stage = function()
                 player = new Player;
                 player.init();
 
-                map = new Map;
-                map.init();
+                this.map = new Map;
+                this.map.init();
 
                 this.enemyGenerator = new EnemyGenerator;
                 this.enemyGenerator.init();
             },
          
             first: function() {
+                var enemies = this.enemyGenerator.object.enemies;
                 
+                for (var i = 0; i < enemies.length; i++)
+                {
+                    var e = enemies[i];
+                    
+                    if (e.object.isShooting())
+                    {
+                        var w = this.map.object.wall_list[e.object.tile_in_map];
+                        w.object.life = 0;
+                    }
+                }
             },
          
             blit: function() {
