@@ -30,5 +30,11 @@
   // Fonts
   addFont:[
     {id:"small", image:"font", firstletter:" ", tileh:8, tilew:8, tilerow:255, gapx:0, gapy:8}
+  ],
+  // Audio
+  addAudio:[
+    ["explosion",["resources/audio/megaexplosion.mp3","resources/audio/megaexplosion.ogg"],{channel:"sfx"}],
+    ["title_screen",["resources/audio/solitude-boss.mp3","resources/audio/solitude-boss.ogg"],{channel:"sfx",loop:true}],
+    ["bgm",["resources/audio/tlol-cave.mp3","resources/audio/tlol-cave.ogg"],{channel:"sfx",loop:true}]
   ]
 }

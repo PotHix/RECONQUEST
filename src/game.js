@@ -11,6 +11,7 @@ function main(){
 
   maingame.gameTitleIntroAnimation=function(reset) {
   if (reset) {
+    gbox.playAudio("title_screen");
     toys.resetToy(this, 'rising');
   }
 
