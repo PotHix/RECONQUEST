@@ -4,4 +4,6 @@ TODO
  - Remove energy bar for now, until finish minions implementation
  - Create minions
  - Use difficult levels for enemies speed and frequency
+ - Add tool-settings.html to the project, so we can change some button settings
+ - Prepare the game to run on Iphone and Android
 
