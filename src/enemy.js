@@ -66,8 +66,7 @@ var Enemy = function(){
 			},
 
 			blit: function() {
-				if (this.life > 0)
-				{
+				if (this.life > 0) {
 					gbox.blitAll(gbox.getBufferContext(), gbox.getImage(this.shadow), {dx:this.x+1, dy:this.y+26});
 					gbox.blitTile(gbox.getBufferContext(), {
 						tileset: this.tileset,

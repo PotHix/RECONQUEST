@@ -1,5 +1,5 @@
 var Player = function(){
-	var upper = null;
+	var upper  = null;
 	var bottom = null;
 
 	this.init = function(){
@@ -29,22 +29,22 @@ var Player = function(){
 					upper:true,
 					tileset:"spell-tile",
 					spark:function(th){
-					defaultSpark(th)
-				},
+						defaultSpark(th)
+					},
 
-				frames: { speed: 3, frames: [0,1] },
-				accx:0, accy:-8
+					frames: { speed: 3, frames: [0,1] },
+					accx:0, accy:-8
 				});
 			},
 
 			initialize: function() {
 				toys.topview.initialize(this, {
 					frames:{
-					standdown:  { speed:1, frames:[0]   },
-					standleft:  { speed:1, frames:[0]   },
-					standright: { speed:1, frames:[0]   },
-					movingleft: { speed:5, frames:[1,2] },
-					movingright:{ speed:5, frames:[1,2] }
+						standdown:  { speed:1, frames:[0]   },
+						standleft:  { speed:1, frames:[0]   },
+						standright: { speed:1, frames:[0]   },
+						movingleft: { speed:5, frames:[1,2] },
+						movingright:{ speed:5, frames:[1,2] }
 					}
 				});
 			},
@@ -86,7 +86,7 @@ var Player = function(){
 					camera:  this.camera,
 					alpha:   1.0
 				});
-			},
+			}
 		});
 	}
 
@@ -104,11 +104,11 @@ var Player = function(){
 			initialize: function() {
 				toys.topview.initialize(this, {
 					frames:{
-					standdown:  { speed:1, frames:[0] },
-					standleft:  { speed:1, frames:[0] },
-					standright: { speed:1, frames:[0] },
-					movingleft: { speed:5, frames:[1,2] },
-					movingright:{ speed:5, frames:[1,2] }
+						standdown:  { speed:1, frames:[0] },
+						standleft:  { speed:1, frames:[0] },
+						standright: { speed:1, frames:[0] },
+						movingleft: { speed:5, frames:[1,2] },
+						movingright:{ speed:5, frames:[1,2] }
 					}
 				});
 			},
@@ -141,7 +141,7 @@ var Player = function(){
 					camera:  this.camera,
 					alpha:   1.0
 				});
-			},
+			}
 		});
 	}
 }

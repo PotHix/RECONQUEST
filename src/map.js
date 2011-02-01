@@ -1,7 +1,5 @@
 // Map Class
-
 var Map = function() {
-
 	var object = null;
 
 	this.init = function() {
@@ -29,7 +27,7 @@ var Map = function() {
 			blit: function() {
 				gbox.blitFade(gbox.getBufferContext(),{});
 				gbox.blitAll(gbox.getBufferContext(), gbox.getImage(this.image), {dx:this.x, dy:this.y});
-			},
+			}
 		});
 	}
 }

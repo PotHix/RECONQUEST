@@ -85,7 +85,7 @@ var Stage = function () {
 					}
 				}
 			}
-		},
+		}
 	};
 }
 
