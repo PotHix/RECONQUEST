@@ -21,9 +21,10 @@ var Stage = function() {
 
 				this.enemyGenerator = new EnemyGenerator;
 				this.enemyGenerator.init();
-
-				this.energy = new EnergyBar;
-				this.energy.init();
+				
+				// No energy bar for now...
+				/*this.energy = new EnergyBar;
+				this.energy.init();*/
 
 				this.health = new HealthBar;
 				this.health.init();
@@ -48,9 +49,10 @@ var Stage = function() {
 				var enemies = this.enemyGenerator.object.enemies;
 
 				if (this.energy_counter++ > 200) {
-					if (maingame.hud.getValue("energy", "value") < 6) {
+					// No energy bar for now...
+					/*if (maingame.hud.getValue("energy", "value") < 6) {
 						maingame.hud.addValue("energy","value",1);
-					}
+					}*/
 
 					this.enemyGenerator.object.addEnemy();
 					this.energy_counter = 0;
