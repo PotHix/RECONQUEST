@@ -1,104 +1,92 @@
 // Stage Class
+var Stage = function() {
+	var object = null;
 
-var Stage = function()
-{
-    var object = null;
+	this.init = function() {
+		this.object = gbox.addObject({
+			group: 'game',
+			x: 0,  y: 0,
+			w: 48, h: 48,
 
-    this.init = function()
-    {
-        this.object = gbox.addObject({
-            group: 'game',
-            x: 0,  y: 0,
-            w: 48, h: 48,
+			energy_counter: 0,
 
-            energy_counter: 0,
+			game_over: false,
 
-            game_over: false,
+			initialize: function() {
+				player = new Player;
+				player.init();
 
-            initialize: function() {
-                player = new Player;
-                player.init();
+				this.map = new Map;
+				this.map.init();
 
-                this.map = new Map;
-                this.map.init();
+				this.enemyGenerator = new EnemyGenerator;
+				this.enemyGenerator.init();
 
-                this.enemyGenerator = new EnemyGenerator;
-                this.enemyGenerator.init();
+				this.energy = new EnergyBar;
+				this.energy.init();
 
-                this.energy = new EnergyBar;
-                this.energy.init();
-
-                this.health = new HealthBar;
-                this.health.init();
+				this.health = new HealthBar;
+				this.health.init();
 
 
-                // Adding our platform (sure, it IS bad code. haven't you noticed yet?)
-                gbox.addObject({
-                    group: "platform",
-                    image: "platform",
+				// Adding our platform (sure, it IS bad code. haven't you noticed yet?)
+				gbox.addObject({
+					group: "platform",
+					image: "platform",
 
-                    x: 38, y: 275,
+					x: 38, y: 275,
 
-                    blit: function() {
-                        gbox.blitAll(gbox.getBufferContext(), gbox.getImage(this.image), {dx:this.x, dy:this.y});
-                    }
-                });
-            },
+					blit: function() {
+						gbox.blitAll(gbox.getBufferContext(), gbox.getImage(this.image), {dx:this.x, dy:this.y});
+					}
+				});
+			},
 
-            first: function() {
-		gbox.stopAudio("title_screen");
-		gbox.playAudio("bgm");
-                var enemies = this.enemyGenerator.object.enemies;
+			first: function() {
+				gbox.stopAudio("title_screen");
+				gbox.playAudio("bgm");
+				var enemies = this.enemyGenerator.object.enemies;
 
-                if (this.energy_counter++ > 200)
-                {
-                    if (maingame.hud.getValue("energy", "value") < 6)
-                    {
-                        maingame.hud.addValue("energy","value",1);
-                    }
+				if (this.energy_counter++ > 200) {
+					if (maingame.hud.getValue("energy", "value") < 6) {
+						maingame.hud.addValue("energy","value",1);
+					}
 
-                    this.enemyGenerator.object.addEnemy();
+					this.enemyGenerator.object.addEnemy();
+					this.energy_counter = 0;
+				}
 
-                    this.energy_counter = 0;
-                }
+				for (var i = 0; i < enemies.length; i++) {
+					var e = enemies[i];
 
-                for (var i = 0; i < enemies.length; i++)
-                {
-                    var e = enemies[i];
+					if (e.object.life <= 0) {
+						this.enemyGenerator.object.spawn(e);
 
-                    if (e.object.life <= 0)
-                    {
-                        this.enemyGenerator.object.spawn(e);
-                    }
-                    else if (e.object && e.object.life > 0)
-		    {
+					} else if (e.object && e.object.life > 0) {
 
-			if(e.object.y > gbox.getScreenH())
-			{
-			    maingame.hud.addValue("health","value",-1);
-			    this.enemyGenerator.object.spawn(e);
+						if (e.object.y > gbox.getScreenH()) {
+							maingame.hud.addValue("health","value",-1);
+							this.enemyGenerator.object.spawn(e);
 
-			    if (maingame.hud.getValue("health", "value") < 2 && !this.game_over)
-			    {
-		                gbox.stopAudio("bgm");
-			        maingame.playerDied({wait:15});
-			        this.game_over = true;
-			    }
-			}
+							if (maingame.hud.getValue("health", "value") < 2 && !this.game_over) {
+								gbox.stopAudio("bgm");
+								maingame.playerDied({wait:15});
+								this.game_over = true;
+							}
+						}
 
-			if (e.object.isShooting())
-			{
-			    var w = this.map.object.wall_list[e.object.tile_in_map];
-			    w.object.life -= e.object.force;
+						if (e.object.isShooting()) {
+							var w = this.map.object.wall_list[e.object.tile_in_map];
+							w.object.life -= e.object.force;
 
-			    if (w.object.life <= 0)
-			    {
-				e.object.walkAgain();
-			    }
-			}
-		    }
-                }
-            },
-        });
-    }
+							if (w.object.life <= 0) {
+								e.object.walkAgain();
+							}
+						}
+					}
+				}
+			},
+		});
+	}
 }
+
