@@ -40,7 +40,7 @@ function main(){
 
 	maingame.initializeGame = function() {
 		this.stage = new Stage;
-		this.stage.init();
+		gbox.addObject(this.stage);
 	};
 
 	// Should not show game menu for now
