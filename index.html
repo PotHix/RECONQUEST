@@ -57,7 +57,10 @@
 				height: 340,
 				zoom: zoom
 			});
-			gbox.addBundle({file:"bundle.js"}); // All I need to load
+
+			gbox.addBundle({file:"game-bundle.js"});
+			if (!mobile) gbox.addBundle({file:"audio-bundle.js"});
+
 			gbox.loadAll(main);
 		});
 
