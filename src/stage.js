@@ -59,12 +59,12 @@ var Stage = function () {
 			for (var i = 0; i < enemies.length; i++) {
 				var e = enemies[i];
 
-				if (e.object.life <= 0) {
+				if (e.life <= 0) {
 					this.enemyGenerator.object.spawn(e);
 
-				} else if (e.object && e.object.life > 0) {
+				} else if (e && e.life > 0) {
 
-					if (e.object.y > gbox.getScreenH()) {
+					if (e.y > gbox.getScreenH()) {
 						maingame.hud.addValue("health","value",-1);
 						this.enemyGenerator.object.spawn(e);
 
@@ -75,12 +75,12 @@ var Stage = function () {
 						}
 					}
 
-					if (e.object.isShooting()) {
-						var w = this.map.object.wall_list[e.object.tile_in_map];
-						w.object.life -= e.object.force;
+					if (e.isShooting()) {
+						var w = this.map.object.wall_list[e.tile_in_map];
+						w.object.life -= e.force;
 
 						if (w.object.life <= 0) {
-							e.object.walkAgain();
+							e.walkAgain();
 						}
 					}
 				}

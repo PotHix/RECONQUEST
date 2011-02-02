@@ -20,22 +20,22 @@ var EnemyGenerator = function() {
 			},
 
 			spawn: function(e) {
-				e.object.life = 100;
-				e.object.wall = true;
-				e.object.ypushing = 1;
+				e.life = 100;
+				e.wall = true;
+				e.ypushing = 1;
 
-				e.object.tile_in_map = Math.floor(Math.random()*8);
+				e.tile_in_map = Math.floor(Math.random()*8);
 
-				e.object.velocity = Math.floor(Math.random()*10) / 10 + 0.2;
-				e.object.frames.movingdown.speed = 3 - e.object.velocity;
+				e.velocity = Math.floor(Math.random()*10) / 10 + 0.2;
+				e.frames.movingdown.speed = 3 - e.velocity;
 
-				e.object.x = e.object.tile_in_map * 48 + 54;
-				e.object.y = Math.floor(Math.random()*30)*20 - 700;
+				e.x = e.tile_in_map * 48 + 54;
+				e.y = Math.floor(Math.random()*30)*20 - 700;
 			},
 
 			addEnemy: function() {
 				var e = new Enemy;
-				e.init();
+				gbox.addObject(e);
 
 				this.spawn(e);
 				this.enemies.push(e);
