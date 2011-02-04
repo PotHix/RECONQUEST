@@ -4,7 +4,7 @@ var EnergyBar = function(){
 
 	this.init = function(){
 		this.object = maingame.hud.setWidget("energy",{
-			widget:    "gauge",
+			widget:    "symbols",
 			tiles:     [0,1,2,3,4,5],
 			value:     1,
 			maxshown:  1,

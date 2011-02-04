@@ -4,7 +4,7 @@ var HealthBar = function(){
 
 	this.init = function(){
 		maingame.hud.setWidget("health",{
-			widget:    "gauge",
+			widget:    "symbols",
 			tiles:     [0,1,2,3,4,5],
 			value:     6,
 			maxshown:  1,
