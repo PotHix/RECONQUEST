@@ -1011,9 +1011,9 @@ var gbox={
   *   x: 0,
   *   y: 0,
   *   initialize: function() {
-      this.x = 10;
-      this.y = 10;
-      },
+  *   this.x = 10;
+  *   this.y = 10;
+  *   },
   * };
   * gbox.addObject(data);
   */
@@ -1035,7 +1035,7 @@ var gbox={
 		return this._objects[data.group][data.id];
 	},
 
-   /**
+  /**
   * Returns whether a given group contains no objets.
   * @param {String} gid The group you're checking.
   * @returns {Boolean} True if the group contains no objects.

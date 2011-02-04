@@ -14,7 +14,6 @@ var Player = function(){
 			tileset: 'player-upper',
 			weapon: 0,
 			time: 2,
-			counter: 2,
 
 			x: 200, y: 224,
 			w: 64, h: 64,
@@ -51,7 +50,6 @@ var Player = function(){
 
 			first: function() {
 				if (this.stilltimer) this.stilltimer--; //The engine should decrease stilltimer for us
-				this.counter=(this.counter+1)%60; // We shouldn't do this =/
 
 				var space = 10;
 				var x_pos = gbox.getScreenW() - this.w - space;
@@ -114,8 +112,6 @@ var Player = function(){
 			},
 
 			first: function() {
-				this.counter=(this.counter+1)%60; // We shouldn't do this =/
-
 				var space = 10;
 				var x_pos = gbox.getScreenW() - this.w - space;
 

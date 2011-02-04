@@ -13,10 +13,8 @@ var Enemy = function() {
 
 		shadow: "enemy01-shadow",
 
-		counter:2,
-		life: 100,
-
-		wall: true,
+		life:  100,
+		wall:  true,
 		force: 0.2,
 
 		point_to_shoot: 200,
@@ -31,14 +29,11 @@ var Enemy = function() {
 		velocity: 1,
 
 		first: function() {
-			this.counter=(this.counter+1)%60; // We shouldn't do this =/
-
 			if (this.y > gbox.getScreenH()) {
 				this.life = 0;
 			}
 
-			if (this.y < this.point_to_shoot || !this.wall)
-			{
+			if (this.y < this.point_to_shoot || !this.wall) {
 				this.y += this.velocity;
 			} else {
 				this.ypushing = 0;
