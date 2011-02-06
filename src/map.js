@@ -14,13 +14,14 @@ var Map = function() {
 
 			initialize: function() {
 				for (var i = 0; i < 8; i++) {
-					var w = new Wall;
-					w.init();
-					w.object.y = 214;
-					w.object.tile_line = i;
-					w.object.x = (i * w.object.w) + 38;
+					var wall = new Wall;
+					wall.y = 214;
+					wall.tile_line = i;
+					wall.x = (i * wall.w) + 38;
+					
+					gbox.addObject(wall);
 
-					this.wall_list[i] = w;
+					this.wall_list[i] = wall;
 				}
 			},
 

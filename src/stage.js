@@ -76,10 +76,10 @@ var Stage = function () {
 					}
 
 					if (e.isShooting()) {
-						var w = this.map.object.wall_list[e.tile_in_map];
-						w.object.life -= e.force;
+						var wall = this.map.object.wall_list[e.tile_in_map];
+						wall.life -= e.force;
 
-						if (w.object.life <= 0) {
+						if (wall.life <= 0) {
 							e.walkAgain();
 						}
 					}
