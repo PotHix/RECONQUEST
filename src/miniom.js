@@ -31,6 +31,9 @@ var Minion = function(){
 			},
 
 			initialize: function() {
+				toys.topview.initialize(this, {
+
+				});
 			},
 
 			first: function() {

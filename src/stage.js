@@ -14,8 +14,8 @@ var Stage = function () {
 			player = new Player;
 			player.init();
 			
-			minion = new Minion;
-			minion.init();
+			/*minion = new Minion;
+			minion.init();*/
 
 			this.map = new Map;
 			this.map.init();
