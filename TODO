@@ -3,12 +3,14 @@ TODO
 
 => DEVELOPMENT
 
- - Create movements and attacks
  - Use difficult levels for enemies speed and frequency
- - Prepare the game to run on Iphone and Android
  - Add link to project page on github and ggj website
  - Set sound off button
  - Create a pause game and trigger it when the game lost focus
+ - Change our bars to use gauge
+ - Organize all classes to return the "self" object
+ - Create the "Change level" feature
+ - Create minions movements and attacks
 
 => ART
 
