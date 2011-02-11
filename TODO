@@ -12,9 +12,11 @@ TODO
  - Create the "Change level" feature
  - Create minions movements and attacks
 
+
 => ART
 
- - Create minions tiles
+ - Draw a new gauge style
+ - Create ice minions tiles
  - Create enemies actions (hit, dead)
  - Draw the concept arts for the fire titan
  - Draw the concept arts for the fire minions
@@ -24,15 +26,20 @@ TODO
  - Draw the concept arts for the wind minions
  - Draw the concept arts for the wind scenario
  - Draw the concept arts for the wind enemies
- - Draw the concept arts for the water titan
- - Draw the concept arts for the water minions
- - Draw the concept arts for the water scenario
- - Draw the concept arts for the water enemies
+ - Draw the concept arts for the earth titan
+ - Draw the concept arts for the earth minions
+ - Draw the concept arts for the earth scenario
+ - Draw the concept arts for the earth enemies
 
-=> TO DISCUSS
 
- - Minions.
-   ~> Powers
-   ~> Movement
- - Different kind of enemies
- - Position of the HUD
+=> MEETING NOTES
+
+ - Add 2 minions
+ - Limit the number of enemies on each stage
+ - One minion should be unfrozen on first or second stage
+ - Each killed enemy should add energy
+ - The first button should revive a minion and the second one should be a random power up
+ - The enemy should have a tile: "hit by minion"
+ - Summon minion should cost energy
+ - More than one wall tiles (full health, half health and so on...)
+ - Maybe one minion should freeze the enemies and the other one should attack
