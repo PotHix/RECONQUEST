@@ -1,0 +1,14 @@
+=> MEETING NOTES
+
+ ~> Feb 10 meeting
+
+   - Add 2 minions
+   - Limit the number of enemies on each stage
+   - One minion should be unfrozen on first or second stage
+   - Each killed enemy should add energy
+   - The first button should revive a minion and the second one should be a random power up
+   - The enemy should have a tile: "hit by minion"
+   - Summon minion should cost energy
+   - More than one wall tiles (full health, half health and so on...)
+   - Maybe one minion should freeze the enemies and the other one should attack
+

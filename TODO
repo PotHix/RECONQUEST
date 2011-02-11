@@ -3,43 +3,44 @@ TODO
 
 => DEVELOPMENT
 
- - Set sound off button (PotHix)
- - Use difficult levels for enemies speed and frequency
- - Add link to project page on github and ggj website
- - Create a pause game and trigger it when the game lost focus
- - Change our bars to use gauge
- - Organize all classes to return the "self" object
- - Create the "Change level" feature
- - Create minions movements and attacks
+  ~> High Priority
+   - Organize all classes to return the "self" object (CrociDB)
+   - Change our bars to use gauge (PotHix)
+   - Create minions movements and attacks (_bojak)
+     - Add 2 minions
+     - All minions should start frozen
+     - B button should unfreeze a minion
+   - The energy bar should reborn
+     - When an enemy is killed the energy bar should be increased
+
+  ~> Low Priority
+   - Set sound off button (PotHix)
+   - Add link to project page on github and ggj website
+   - Create a pause game and trigger it when the game lost focus
+   - Create the "Change level" feature
+   - Use difficult levels for enemies speed and frequency
 
 
 => ART
 
- - Draw a new gauge style
- - Create ice minions tiles
- - Create enemies actions (hit, dead)
- - Draw the concept arts for the fire titan
- - Draw the concept arts for the fire minions
- - Draw the concept arts for the fire scenario
- - Draw the concept arts for the fire enemies
- - Draw the concept arts for the wind titan
- - Draw the concept arts for the wind minions
- - Draw the concept arts for the wind scenario
- - Draw the concept arts for the wind enemies
- - Draw the concept arts for the earth titan
- - Draw the concept arts for the earth minions
- - Draw the concept arts for the earth scenario
- - Draw the concept arts for the earth enemies
+ ~> High Priority
+   - Create ice minions tiles
+   - Create enemies actions (hit, dead, hit by minion)
+   - Create other wall state tiles for
+     - 3/4 health
+     - 2/4 health
 
+ ~> Low Priority
+   - Draw the concept arts for the fire titan
+   - Draw the concept arts for the fire minions
+   - Draw the concept arts for the fire scenario
+   - Draw the concept arts for the fire enemies
+   - Draw the concept arts for the wind titan
+   - Draw the concept arts for the wind minions
+   - Draw the concept arts for the wind scenario
+   - Draw the concept arts for the wind enemies
+   - Draw the concept arts for the earth titan
+   - Draw the concept arts for the earth minions
+   - Draw the concept arts for the earth scenario
+   - Draw the concept arts for the earth enemies
 
-=> MEETING NOTES
-
- - Add 2 minions
- - Limit the number of enemies on each stage
- - One minion should be unfrozen on first or second stage
- - Each killed enemy should add energy
- - The first button should revive a minion and the second one should be a random power up
- - The enemy should have a tile: "hit by minion"
- - Summon minion should cost energy
- - More than one wall tiles (full health, half health and so on...)
- - Maybe one minion should freeze the enemies and the other one should attack
