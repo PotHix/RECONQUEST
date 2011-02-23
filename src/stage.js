@@ -18,7 +18,7 @@ var Stage = function () {
 			minion.init();*/
 
 			this.map = new Map;
-			this.map.init();
+			gbox.addObject(this.map);
 
 			this.enemyGenerator = new EnemyGenerator;
 			gbox.addObject(this.enemyGenerator);
@@ -79,7 +79,7 @@ var Stage = function () {
 					}
 
 					if (e.isShooting()) {
-						var wall = this.map.object.wall_list[e.tile_in_map];
+						var wall = this.map.wall_list[e.tile_in_map];
 						wall.life -= e.force;
 
 						if (wall.life <= 0) {
