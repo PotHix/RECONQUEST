@@ -21,7 +21,7 @@ var Stage = function () {
 			this.map.init();
 
 			this.enemyGenerator = new EnemyGenerator;
-			this.enemyGenerator.init();
+			gbox.addObject(this.enemyGenerator);
 
 			// No energy bar for now...
 			/*this.energy = new EnergyBar;
@@ -47,7 +47,7 @@ var Stage = function () {
 		first: function() {
 			gbox.stopAudio("title_screen");
 			gbox.playAudio("bgm");
-			var enemies = this.enemyGenerator.object.enemies;
+			var enemies = this.enemyGenerator.enemies;
 
 			if (this.energy_counter++ > 200) {
 				// No energy bar for now...
@@ -55,7 +55,7 @@ var Stage = function () {
 					maingame.hud.addValue("energy","value",1);
 				}*/
 
-				this.enemyGenerator.object.addEnemy();
+				this.enemyGenerator.addEnemy();
 				this.energy_counter = 0;
 			}
 
@@ -63,13 +63,13 @@ var Stage = function () {
 				var e = enemies[i];
 
 				if (e.life <= 0) {
-					this.enemyGenerator.object.spawn(e);
+					this.enemyGenerator.spawn(e);
 
 				} else if (e && e.life > 0) {
 
 					if (e.y > gbox.getScreenH()) {
 						maingame.hud.addValue("health","value",-1);
-						this.enemyGenerator.object.spawn(e);
+						this.enemyGenerator.spawn(e);
 
 						if (maingame.hud.getValue("health", "value") < 2 && !this.game_over) {
 							gbox.stopAudio("bgm");
