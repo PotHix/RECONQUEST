@@ -16,7 +16,7 @@
 		["wall", "resources/wall.png"],
 		["platform", "resources/platform.png"],
 		["hit-sparks", "resources/splash.png"],
-		["minion", "resources/minion.png"]
+		["minion", "resources/minion-ice.png"]
 	],
 
 	// Tiles
