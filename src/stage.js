@@ -13,7 +13,7 @@ var Stage = function () {
 		initialize: function() {
 			player = new Player;
 			player.init();
-			
+
 			/*minion = new Minion;
 			minion.init();*/
 
@@ -71,7 +71,7 @@ var Stage = function () {
 						maingame.hud.addValue("health","value",-1);
 						this.enemyGenerator.spawn(e);
 
-						if (maingame.hud.getValue("health", "value") < 2 && !this.game_over) {
+						if (maingame.hud.getValue("health", "value") < 1 && !this.game_over) {
 							gbox.stopAudio("bgm");
 							maingame.playerDied({wait:15});
 							this.game_over = true;

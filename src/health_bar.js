@@ -4,16 +4,16 @@ var HealthBar = function(){
 
 	this.init = function(){
 		maingame.hud.setWidget("health",{
-			widget:    "symbols",
-			tiles:     [0,1,2,3,4,5],
-			value:     6,
+			widget:    "gauge",
+			tiles:     [1,0],
+			value:     5,
+			maxvalue:  5,
+			minvalue:  0,
 			maxshown:  1,
-			tileset:   "hud-health",
 			emptytile: 0,
+			tileset:   "hud-health",
 			dx:        234,
-			dy:        10,
-			gapx:      0,
-			gapy:      0
+			dy:        23
 		});
 	}
 }
