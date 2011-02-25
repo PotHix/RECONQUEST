@@ -51,8 +51,8 @@ var Stage = function () {
 
 			if (this.energy_counter++ > 200) {
 				// No energy bar for now...
-				/*if (maingame.hud.getValue("energy", "value") < 6) {
-					maingame.hud.addValue("energy","value",1);
+				/*if (maingame.hud.getValue("energy", "value") < 100) {
+					maingame.hud.addValue("energy","value",20);
 				}*/
 
 				this.enemyGenerator.addEnemy();
@@ -68,7 +68,7 @@ var Stage = function () {
 				} else if (e && e.life > 0) {
 
 					if (e.y > gbox.getScreenH()) {
-						maingame.hud.addValue("health","value",-1);
+						maingame.hud.addValue("health","value",-20);
 						this.enemyGenerator.spawn(e);
 
 						if (maingame.hud.getValue("health", "value") < 1 && !this.game_over) {

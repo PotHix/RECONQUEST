@@ -4,16 +4,16 @@ var EnergyBar = function(){
 
 	this.init = function(){
 		this.object = maingame.hud.setWidget("energy",{
-			widget:    "symbols",
-			tiles:     [0,1,2,3,4,5],
-			value:     1,
+			widget:    "gauge",
+			tiles:     [1,0],
+			value:     0,
+			maxvalue:  100,
+			minvalue:  0,
 			maxshown:  1,
-			tileset:   "hud-energy",
 			emptytile: 5,
+			tileset:   "hud-energy",
 			dx:        4,
-			dy:        10,
-			gapx:      0,
-			gapy:      0
+			dy:        10
 		});
 	}
 }
