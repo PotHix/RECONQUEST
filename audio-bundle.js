@@ -1,9 +1,8 @@
 {
 	// Audio
 	addAudio:[
-		["bgm",["resources/audio/tlol-cave.mp3","resources/audio/tlol-cave.ogg"],{channel:"bgmusic",loop:true}],
-		["explosion",["resources/audio/megaexplosion.mp3","resources/audio/megaexplosion.ogg"],{channel:"sfx"}],
-		["title_screen",["resources/audio/solitude-boss.mp3","resources/audio/solitude-boss.ogg"],{channel:"bgmusic",loop:true}]
+		["bgm",["resources/audio/game-song.mp3","resources/audio/game-song.ogg"],{channel:"bgmusic",loop:true}],
+		["title_screen",["resources/audio/game-intro.mp3","resources/audio/game-intro.ogg"],{channel:"bgmusic",loop:true}]
 	]
 }
 
