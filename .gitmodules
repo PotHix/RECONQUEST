@@ -1,0 +1,3 @@
+[submodule "akihabara-source"]
+	path = akihabara-source
+	url = git://github.com/kesiev/akihabara.git
