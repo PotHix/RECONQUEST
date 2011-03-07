@@ -4,6 +4,28 @@
 
 var maingame;
 
+function gameStartUp(){
+	var mobile = navigator.userAgent.match(/iPhone/) || navigator.userAgent.match(/Android/);
+
+	gbox.onLoad(function(){
+		help.akihabaraInit({
+			title:"Rise of the Titans - Plæv Team (GGJ'11)",
+			splash:{
+				footnotes: ["Plaev Team entry for Global Game Jam '11 at Sao Caetano do Sul, SP - Brazil"],
+				background: "resources/splash_screen.png"
+			},
+			width:  460,
+			height: 340,
+			zoom: (mobile ? 1 : 1.5)
+		});
+
+		gbox.addBundle({file:"game-bundle.js"});
+		if (!mobile) gbox.addBundle({file:"audio-bundle.js"});
+
+		gbox.loadAll(main);
+	});
+};
+
 function main(){
 	gbox.setGroups(['map','enemy','wall','platform','playerbullets','player','sparks','game','minion','minionbullets']);
 	maingame = gamecycle.createMaingame('game', 'game');
