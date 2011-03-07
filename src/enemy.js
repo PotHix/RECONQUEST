@@ -29,6 +29,8 @@ var Enemy = function() {
 		velocity: 1,
 
 		first: function() {
+			this.counter=(this.counter+1)%60; // We shouldn't do this =/
+
 			if (this.y > gbox.getScreenH()) {
 				this.life = 0;
 			}
