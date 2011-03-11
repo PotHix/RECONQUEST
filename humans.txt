@@ -1,21 +1,21 @@
 /* TEAM */
         PotHix <Willian Molinari>
-        Location: São Paulo, Brazil
+        Location: Sao Paulo, Brazil
         Twitter: @PotHix
         Site: http://pothix.com
 
         CrociDB <Bruno Croci>
-        Location: São Paulo, Brazil
+        Location: Sao Paulo, Brazil
         Twitter: @CrociDB
         Site: http://crocidb.com
 
         rmasoni <Rafael Masoni>
-        Location: São Paulo, Brazil
+        Location: Sao Paulo, Brazil
         Twitter: @rmasoni
         Site: http://rafaelmasoni.com
 
         _bojak <Altair Gonçalves>
-        Location: São Paulo, Brazil
+        Location: Sao Paulo, Brazil
         Twitter: @_bojak
 
 /* SITE */
