@@ -11,9 +11,7 @@ var EnemyGenerator = function() {
 		x: 0, y: 0,
 
 		initialize: function() {
-			for (var i = 0; i < this.max_enemies; i++) {
-				this.addEnemy();
-			}           
+			// Do nothing...           
 		},
 
 		spawn: function(e) {
@@ -36,7 +34,21 @@ var EnemyGenerator = function() {
 
 			this.spawn(e);
 			this.enemies.push(e);    
-		}    
+		},
+		
+		/**
+		 * Experimental function:
+		 *  		Sets the amount of enemies of each kind.
+		 *  		
+		 * @param: enemies_dic: A dictionary with: kind_of_enemy -> # of enemies:
+		 * 				~> regular: basic enemies
+		 */
+		addEnemies: function(enemies_dic){         
+			// Adds the regular enemies
+			for (var i = 0; i < enemies_dic.regular; i++) {
+				this.addEnemy();
+			}
+		}
 	}
 }
 

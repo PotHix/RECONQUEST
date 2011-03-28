@@ -21,6 +21,8 @@ var Stage = function () {
 			gbox.addObject(this.map);
 
 			this.enemyGenerator = new EnemyGenerator;
+			// This is an experimental function. Obviously, all the data passed to this function will be loaded from a config file.
+			this.enemyGenerator.addEnemies( { regular: 10 } );
 			gbox.addObject(this.enemyGenerator);
 
 			// No energy bar for now...
