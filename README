@@ -37,6 +37,7 @@ SUPPORTED PLATFORMS
     ~> Linux
     ~> iPhone
     ~> iPad
+    ~> Android
     ~> Other mobile devices with HTML5 support
 
  Runs on any modern browser such as Google Chrome 5+, Firefox 3.5+,
