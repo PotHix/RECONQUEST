@@ -4,8 +4,6 @@ TODO
 => DEVELOPMENT
 
   ~> High Priority
-   - Organize all classes to return the "self" object (CrociDB)
-   - Change our bars to use gauge (PotHix)
    - Create minions movements and attacks (_bojak)
      - Add 2 minions
      - All minions should start frozen
@@ -19,6 +17,10 @@ TODO
    - Create a pause game and trigger it when the game lost focus
    - Create the "Change level" feature
    - Use difficult levels for enemies speed and frequency
+
+  ~> Performance
+   - Merge all image files into one
+   - Merge javascript files into one
 
 
 => ART
