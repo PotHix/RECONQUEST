@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# revision c5c2e84612a1bf9e74b5767c5cac2e410052e301
+# revision dcdfa6a492b84910cbea4a053eaee2ba09fbe30f
 index.html
 audio-bundle.js
 game-bundle.js
@@ -30,10 +30,6 @@ resources/special-warning.png
 resources/splash_screen.png
 resources/titan-ice_shadow.png
 resources/wall.png
-resources/audio/game-intro.mp3
-resources/audio/game-intro.ogg
-resources/audio/game-song.mp3
-resources/audio/game-song.ogg
 akihabara/gamecycle.js
 akihabara/iphofretboard.js
 akihabara/toys.js
