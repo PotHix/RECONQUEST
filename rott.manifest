@@ -1,9 +1,7 @@
 CACHE MANIFEST
-# revision lasifehp98
-
+# revision 0830da9978b432aad50711ecd7d866e4cb7a3d12
 NETWORK:
 *
-
 CACHE:
 audio-bundle.js
 game-bundle.js
