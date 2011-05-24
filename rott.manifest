@@ -1,6 +1,5 @@
 CACHE MANIFEST
 # revision dcdfa6a492b84910cbea4a053eaee2ba09fbe30f
-index.html
 audio-bundle.js
 game-bundle.js
 src/enemy_generator.js
