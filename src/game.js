@@ -24,7 +24,7 @@ function gameStartUp(){
 
 		gbox.loadAll(main);
 	});
-};
+}
 
 function main(){
 	gbox.setGroups(['map','enemy','wall','platform','playerbullets','player','sparks','game','minion','minionbullets']);
@@ -71,7 +71,7 @@ function main(){
 	};
 
 	maingame.initializeGame = function() {
-		this.stage = new Stage;
+		this.stage = new Stage();
 		gbox.addObject(this.stage);
 	};
 
