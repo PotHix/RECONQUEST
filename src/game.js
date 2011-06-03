@@ -16,6 +16,7 @@ function gameStartUp() {
 			},
 			width:  460,
 			height: 340,
+			offlinecache: true,
 			zoom: (mobile ? 1 : 1.5)
 		});
 
