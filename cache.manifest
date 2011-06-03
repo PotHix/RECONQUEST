@@ -2,7 +2,7 @@ CACHE MANIFEST
 # revision 1
 
 NETWORK:
-http://www.google-analytics.com/ga.js
+http://www.google-analytics.com
 
 FALLBACK:
 resources/audio resources/audio/silence.mp3
