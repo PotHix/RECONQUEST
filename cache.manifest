@@ -1,8 +1,14 @@
 CACHE MANIFEST
-# revision 0830da9978b432aad50711ecd7d866e4cb7a3d12
+# revision 1
+
 NETWORK:
-*
+http://www.google-analytics.com/ga.js
+
+FALLBACK:
+resources/audio resources/audio/silence.mp3
+
 CACHE:
+analytics.js
 audio-bundle.js
 game-bundle.js
 src/enemy_generator.js
@@ -15,6 +21,7 @@ src/miniom.js
 src/player.js
 src/stage.js
 src/wall.js
+resources/audio/silence.mp3
 resources/bar-health.png
 resources/enemy01-shadow.png
 resources/ice_spell.png

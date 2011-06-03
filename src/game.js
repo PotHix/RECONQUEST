@@ -4,7 +4,7 @@
 
 var maingame;
 
-function gameStartUp(){
+function gameStartUp() {
 	var mobile = navigator.userAgent.match(/iPhone/) || navigator.userAgent.match(/Android/);
 
 	gbox.onLoad(function(){
@@ -26,7 +26,7 @@ function gameStartUp(){
 	});
 }
 
-function main(){
+function main() {
 	gbox.setGroups(['map','enemy','wall','platform','playerbullets','player','sparks','game','minion','minionbullets']);
 	maingame = gamecycle.createMaingame('game', 'game');
 
@@ -83,4 +83,3 @@ function main(){
 
 	gbox.go();
 }
-
