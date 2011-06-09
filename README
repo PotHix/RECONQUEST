@@ -1,7 +1,7 @@
-RISE OF THE TITANS
+RECONQUEST
 --------------------------------------------------------------------
 
- Rise of the Titans is the Plæv Team's entry to Global Game Jam 2011.
+ RECONQUEST is the Plæv Team's entry to Global Game Jam 2011.
  It's a WebBase  game  made with JavaScript  and  Akihabara Library,
  which uses the HTML5 Canvas.
 
@@ -28,7 +28,7 @@ STORY
 SUPPORTED PLATFORMS
 -----------------------
 
- Rise of the Titans was made to work on any plataform that runs the
+ RECONQUEST was made to work on any plataform that runs the
  latest technology on Web Gaming: The HTML5 Canvas. It should work
  on these platforms:
 
@@ -70,4 +70,3 @@ Plæv Team members:
 	~> Bruno Croci - @CrociDB
 	~> Rafael Masoni - @rmasoni
 	~> Willian Molinari - @PotHix
-

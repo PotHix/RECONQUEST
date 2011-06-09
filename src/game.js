@@ -9,7 +9,7 @@ function gameStartUp() {
 
 	gbox.onLoad(function(){
 		help.akihabaraInit({
-			title:"Rise of the Titans - Plæv Team (GGJ'11)",
+			title:"RECONQUEST - Plæv Team (GGJ'11)",
 			splash:{
 				footnotes: ["Plaev Team entry for Global Game Jam '11 at Sao Caetano do Sul, SP - Brazil"],
 				background: "resources/splash_screen.png"
