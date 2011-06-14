@@ -1,5 +1,5 @@
 RECONQUEST
-----------
+==========
 
  RECONQUEST is the Plæv Team's entry to Global Game Jam 2011.
  It's a WebBase  game  made with JavaScript  and  Akihabara Library,
@@ -47,7 +47,6 @@ LICENSE
 -------
 
  Akihabara Library uses the MIT License. For further information:
-
  <http://www.kesiev.com/akihabara/>
 
  This game uses the CC BY-NC-SA 3.0. As in the LICENSE file.
@@ -65,7 +64,7 @@ CREDITS
 Plæv Team members:
 ------------------
 
-* Altair Gonçalves - [@_bojak](http://twitter.com/@_bojak)
-* Bruno Croci - [@CrociDB](http://twitter.com/@CrociDB)
-* Rafael Masoni - [@rmasoni](http://twitter.com/@rmasoni)
-* Willian Molinari - [@PotHix](http://twitter.com/@PotHix)
+* Altair Gonçalves - [@_bojak](http://twitter.com/_bojak)
+* Bruno Croci - [@CrociDB](http://twitter.com/CrociDB)
+* Rafael Masoni - [@rmasoni](http://twitter.com/rmasoni)
+* Willian Molinari - [@PotHix](http://twitter.com/PotHix)
