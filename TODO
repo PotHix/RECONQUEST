@@ -10,6 +10,12 @@ TODO
      - B button should unfreeze a minion
    - The energy bar should reborn
      - When an enemy is killed the energy bar should be increased
+   - Fix zoom to mobile devices
+     - iPhone
+     - iPad **[OK]**
+     - Android Tablets
+     - Android Phones
+       - Motorola milestone **[OK]**
 
   ~> Low Priority
    - Set sound off button (PotHix)
