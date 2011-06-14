@@ -1,6 +1,9 @@
 RECONQUEST
 ==========
 
+INTRODUCTION
+------------
+
  RECONQUEST is the Plæv Team's entry to Global Game Jam 2011.
  It's a WebBase  game  made with JavaScript  and  Akihabara Library,
  which uses the HTML5 Canvas.
