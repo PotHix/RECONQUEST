@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# revision fa3d720
+# revision 62eb8f5
 
 NETWORK:
 http://www.google-analytics.com
@@ -13,15 +13,15 @@ audio-bundle.js
 game-bundle.js
 //proxy.taazr.com/public-scripts/taazr.js
 //proxy.taazr.com/proxy/plaevteam.com/reconquest/src/enemy_generator.js
-//proxy.taazr.com/proxy/plaevteam.com/src/enemy.js
-//proxy.taazr.com/proxy/plaevteam.com/src/energy_bar.js
-//proxy.taazr.com/proxy/plaevteam.com/src/game.js
-//proxy.taazr.com/proxy/plaevteam.com/src/health_bar.js
-//proxy.taazr.com/proxy/plaevteam.com/src/map.js
-//proxy.taazr.com/proxy/plaevteam.com/src/miniom.js
-//proxy.taazr.com/proxy/plaevteam.com/src/player.js
-//proxy.taazr.com/proxy/plaevteam.com/src/stage.js
-//proxy.taazr.com/proxy/plaevteam.com/src/wall.js
+//proxy.taazr.com/proxy/plaevteam.com/reconquest/src/enemy.js
+//proxy.taazr.com/proxy/plaevteam.com/reconquest/src/energy_bar.js
+//proxy.taazr.com/proxy/plaevteam.com/reconquest/src/game.js
+//proxy.taazr.com/proxy/plaevteam.com/reconquest/src/health_bar.js
+//proxy.taazr.com/proxy/plaevteam.com/reconquest/src/map.js
+//proxy.taazr.com/proxy/plaevteam.com/reconquest/src/miniom.js
+//proxy.taazr.com/proxy/plaevteam.com/reconquest/src/player.js
+//proxy.taazr.com/proxy/plaevteam.com/reconquest/src/stage.js
+//proxy.taazr.com/proxy/plaevteam.com/reconquest/src/wall.js
 resources/audio/silence.mp3
 resources/bar-health.png
 resources/enemy01-shadow.png
