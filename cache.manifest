@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# revision ef339e9
+# revision fa3d720
 
 NETWORK:
 http://www.google-analytics.com
@@ -11,16 +11,17 @@ CACHE:
 analytics.js
 audio-bundle.js
 game-bundle.js
-src/enemy_generator.js
-src/enemy.js
-src/energy_bar.js
-src/game.js
-src/health_bar.js
-src/map.js
-src/miniom.js
-src/player.js
-src/stage.js
-src/wall.js
+//proxy.taazr.com/public-scripts/taazr.js
+//proxy.taazr.com/proxy/plaevteam.com/reconquest/src/enemy_generator.js
+//proxy.taazr.com/proxy/plaevteam.com/src/enemy.js
+//proxy.taazr.com/proxy/plaevteam.com/src/energy_bar.js
+//proxy.taazr.com/proxy/plaevteam.com/src/game.js
+//proxy.taazr.com/proxy/plaevteam.com/src/health_bar.js
+//proxy.taazr.com/proxy/plaevteam.com/src/map.js
+//proxy.taazr.com/proxy/plaevteam.com/src/miniom.js
+//proxy.taazr.com/proxy/plaevteam.com/src/player.js
+//proxy.taazr.com/proxy/plaevteam.com/src/stage.js
+//proxy.taazr.com/proxy/plaevteam.com/src/wall.js
 resources/audio/silence.mp3
 resources/bar-health.png
 resources/enemy01-shadow.png
@@ -39,14 +40,14 @@ resources/special-warning.png
 resources/splash_screen.png
 resources/titan-ice_shadow.png
 resources/wall.png
-akihabara/gamecycle.js
-akihabara/iphofretboard.js
-akihabara/toys.js
-akihabara/gbox.js
-akihabara/help.js
-akihabara/iphopad.js
-akihabara/tool.js
-akihabara/trigo.js
+//proxy.taazr.com/proxy/plaevteam.com/reconquest/akihabara/gamecycle.js
+//proxy.taazr.com/proxy/plaevteam.com/reconquest/akihabara/iphofretboard.js
+//proxy.taazr.com/proxy/plaevteam.com/reconquest/akihabara/toys.js
+//proxy.taazr.com/proxy/plaevteam.com/reconquest/akihabara/gbox.js
+//proxy.taazr.com/proxy/plaevteam.com/reconquest/akihabara/help.js
+//proxy.taazr.com/proxy/plaevteam.com/reconquest/akihabara/iphopad.js
+//proxy.taazr.com/proxy/plaevteam.com/reconquest/akihabara/tool.js
+//proxy.taazr.com/proxy/plaevteam.com/reconquest/akihabara/trigo.js
 akihabara/buttons.png
 akihabara/debugfont.png
 akihabara/dpad.png
