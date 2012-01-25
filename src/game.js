@@ -1,5 +1,5 @@
 // ---
-// Copyright (c) 2011 Plæv, PotHix, bojak, CrociDB, RafaelMasoni
+// Copyright (c) 2012 PotHix, bojak, CrociDB, rmasoni
 // ---
 
 var maingame;
@@ -9,9 +9,9 @@ function gameStartUp() {
 
 	gbox.onLoad(function(){
 		help.akihabaraInit({
-			title:"RECONQUEST - Plæv Team (GGJ'11)",
+			title:"RECONQUEST - GGJ'11",
 			splash:{
-				footnotes: ["Plaev Team entry for Global Game Jam '11 at Sao Caetano do Sul, SP - Brazil"],
+				footnotes: ["Game entry for Global Game Jam '11 at Sao Caetano do Sul, SP - Brazil"],
 				background: "resources/splash_screen.png"
 			},
 			width:  460,

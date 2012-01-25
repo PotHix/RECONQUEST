@@ -4,7 +4,7 @@ RECONQUEST
 INTRODUCTION
 ------------
 
- RECONQUEST is the Plæv Team's entry to Global Game Jam 2011.
+ RECONQUEST is the game entry to Global Game Jam 2011.
  It's a WebBase  game  made with JavaScript  and  Akihabara Library,
  which uses the HTML5 Canvas.
 
@@ -12,7 +12,7 @@ INTRODUCTION
  high-resolution assets or executable file. To play the game, run
  the "game.html" file.
 
- This game can also be played in: <http://plaevteam.com/reconquest>
+ This game can also be played in: <http://pothix.github.com/reconquest>
 
 
 STORY
@@ -64,7 +64,7 @@ CREDITS
     ~> www.Shockwave-Sound.com
 
 
-Plæv Team members:
+Team members:
 ------------------
 
 * Altair Gonçalves - [@_bojak](http://twitter.com/_bojak)
