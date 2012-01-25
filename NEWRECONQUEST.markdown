@@ -1,0 +1,32 @@
+#Novos Conceitos
+
+- Diminuir a resolução e aumentar o zoom
+- Estilo medieval
+- Eliminar minions
+- Inserir spells
+    - Mana recupera com o tempo
+    - Dano em área
+    - Usar magias que possa mirar
+    - Fortalecimento da parede
+    - Reconstruir parede (posicionar onde quiser, talvez)
+    - Gelo: congela
+    - Fogo: dano por tempo
+    - Vento: deixa lento
+    - Terra: transforma em aliado
+- Economia
+    - Sistema de upgrades
+- Usar setas pra cima e pra baixo como função (como alternar entre spells)
+- Waves de inimigos
+    - Dificuldade aumenta entre as waves
+- Capítulos
+    - Fases
+    - Características diferentes
+        - Bloquear tile do Titan (meteoro etc.)
+- Inimigos iguais se agrupam
+    - Ao se tocarem, um é dropado, soma-se HP no principal e acresce no contador
+    - Conforme o HP, subtrair do contador
+    - Conforme o contador, alterar ataque
+    - Sprite é alterado conforme o contador
+- Inimigos andam pra frente até encontrarem um obstáculo (inimigo de tipo diferente ou barreira)
+- Inimigos tem range de ataque
+    - Atacam quando entram na range
