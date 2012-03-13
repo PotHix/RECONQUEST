@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html manifest="cache.manifest">
 	<head>
 		<!-- Akihabara Files -->
@@ -44,15 +44,10 @@
 	</head>
 
 	<body>
+		<script type="text/javascript">
+			function defaultSpark() { return; }
+			gameStartUp(); // Starting the game
+		</script>
+		<script type="text/javascript" src="analytics.js"></script>
 	</body>
-
-	<script type="text/javascript">
-		function defaultSpark() { return; }
-		gameStartUp(); // Starting the game
-
-		Taazr.secret = "3445dfd0-9f3a-012e-8800-12313d091c83";
-		Taazr.connect();
-	</script>
-
-	<script type="text/javascript" src="analytics.js"></script>
 </html>
