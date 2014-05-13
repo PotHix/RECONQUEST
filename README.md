@@ -6,9 +6,8 @@ RECONQUEST is the game entry to Global Game Jam 2011.
 It's a WebBase game made with JavaScript and Akihabara Library,
 which uses the HTML5 Canvas.
 
-IMPORTANT: This is a vintage-styled webgame and, therefore, has no
-high-resolution assets or executable file. To play the game, run
-the `game.html` file.
+**Important:** This is a vintage-style webgame and, therefore, has no
+high-resolution assets or executable file. To play the game, run `game.html`.
 
 This game can also be played in:
 [http://pothix.github.com/reconquest](http://pothix.github.com/reconquest)
