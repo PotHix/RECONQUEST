@@ -2,8 +2,8 @@
 
 ## Introduction
 
-RECONQUEST is the game entry to Global Game Jam 2011.
-It's a WebBase game made with JavaScript and Akihabara Library,
+RECONQUEST was developed as an entry to Global Game Jam 2011.
+It's a browser-based game made with JavaScript and the Akihabara engine,
 which uses the HTML5 Canvas.
 
 **Important:** This is a vintage-style webgame and, therefore, has no
