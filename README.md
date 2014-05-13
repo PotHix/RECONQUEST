@@ -1,6 +1,6 @@
 # RECONQUEST
 
-## INTRODUCTION
+## Introduction
 
 RECONQUEST is the game entry to Global Game Jam 2011.
 It's a WebBase game made with JavaScript and Akihabara Library,
@@ -14,7 +14,7 @@ This game can also be played in:
 [http://pothix.github.com/reconquest](http://pothix.github.com/reconquest)
 
 
-## STORY
+## Story
 
 Due to continuous damage done to planet Earth by humanity, glaciers
 start melting, revealing an ancient civilization hidden within the
@@ -25,7 +25,7 @@ end to this situation and take back his planet, wiping off humanity
 from it.
 
 
-## SUPPORTED PLATFORMS
+## Supported Platforms
 
 RECONQUEST was made to work on any plataform that runs the
 latest technology on web gaming: HTML5 `<canvas>`. It should work
@@ -43,7 +43,7 @@ Runs on any modern browser such as **Google Chrome 5+**, **Firefox 3.5+**,
 **Safari 4+**, Internet Explorer 9+, Opera 11+.
 
 
-## LICENSE
+## License
 
 Akihabara Library uses the MIT License. For further information:
 [http://www.kesiev.com/akihabara/](http://www.kesiev.com/akihabara/)
@@ -51,7 +51,7 @@ Akihabara Library uses the MIT License. For further information:
 This game abides to CC BY-NC-SA 3.0, as in the LICENSE file.
 
 
-## CREDITS
+## Credits
 
 “Something in the Cave?” BGM Track - Music composed by Bjorn Lynne
 (PRS). All rights reserved. Used under permission. I recommend
@@ -59,7 +59,7 @@ royalty free music from the excellent stock music library at:
 www.shockwave-sound.com
 
 
-## Team members:
+### Team members
 
 - Altair Gonçalves ([@_bojak](http://twitter.com/_bojak))
 - Bruno Croci ([@CrociDB](http://twitter.com/CrociDB))
