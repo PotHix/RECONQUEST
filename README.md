@@ -10,7 +10,7 @@ which uses the HTML5 Canvas.
 high-resolution assets or executable file. To play the game, run `game.html`.
 
 This game can also be played in:
-[http://pothix.github.com/reconquest](http://pothix.github.com/reconquest)
+[http://pothix.com/RECONQUEST](http://pothix.com/RECONQUEST)
 
 
 ## Story
